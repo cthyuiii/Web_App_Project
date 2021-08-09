@@ -58,7 +58,7 @@ namespace WebApplication.DAL
                         Score = reader.GetInt32(3),          //3: 4th column     
                     }
                 );
-                                  
+
             }
             //Close DataReader
             reader.Close();

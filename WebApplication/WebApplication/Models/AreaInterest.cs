@@ -9,7 +9,7 @@ namespace WebApplication.Models
     public class AreaInterest
     {
         [Display(Name = "ID")]
-        public int AreaInterestID{ get; set; }
+        public int AreaInterestID { get; set; }
 
         [Display(Name = "Name")]
         [Required(ErrorMessage = "Please enter a name!")]

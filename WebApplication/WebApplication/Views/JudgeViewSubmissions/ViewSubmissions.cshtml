@@ -1,9 +1,48 @@
 ﻿@model WebApplication.Models.JudgeViewSubmissions
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 @{
     ViewData["Title"] = "View Submissions";
 }
 <h4 class="PageTitle">Input Scores</h4>
+<style>
+    #overlay {
+        position: fixed; /* Sit on top of the page content */
+        display: block; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #overlay-box {
+        position: absolute;
+        width: 40%;
+        height: 40px;
+        background-color: white;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+</style>
+@if (HttpContextAccessor.HttpContext.Session.GetString("TempData") == "true")
+{
+    <div id="overlay">
+        <div id="overlay-box">
+            Criteria for this competition has not been done!
+        </div>
+    </div>
+    HttpContextAccessor.HttpContext.Session.SetString("TempData", "false");
+}
 <form asp-action="Create">
     <fieldset class="FormContent">
         <div class="form-group row">
@@ -43,48 +82,48 @@
                 <div class="col-sm-9 form-control-plaintext">
                     @if (!(Model.FileSubmitted is null))
                     {
-                    <a>@Html.ActionLink(Model.FileSubmitted, "DownloadFile", new { fileName = Model.FileSubmitted })</a>
+                        <a>@Html.ActionLink(Model.FileSubmitted, "DownloadFile", new { fileName = Model.FileSubmitted })</a>
                     }
                     else
                     {
-                    @ViewData["FileSubmittedFalse"]
+                        @ViewData["FileSubmittedFalse"]
                     }
                     <input asp-for="FileSubmitted" form-control style="display:none" />
                 </div>
             </div>
         </div>
-        <div class="table-responsive">
-            <table id="viewCompetition" class="table table-striped table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Criteria ID</th>
-                        <th>Criteria Name</th>
-                        <th>Score</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.scoreList)
-                    {
-                        @if (Model.ResultReleasedDate < DateTime.Now)
+        @if (Model.criteriaList.Count != 0)
+        {
+            <div class="table-responsive">
+                <table id="viewCompetition" class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Criteria ID</th>
+                            <th>Criteria Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.scoreList)
                         {
-                            <tr>
-                                <td>@item.CriteriaID.ToString()</td>
-                                <td>@item.CriteriaName</td>
-                                <td>@item.Score.ToString()</td>
-                            </tr>
+                            @if (Model.ResultReleasedDate < DateTime.Now)
+                            {
+                                <tr>
+                                    <td>@item.CriteriaID.ToString()</td>
+                                    <td>@item.CriteriaName</td>
+                                    <td>@item.Score.ToString()</td>
+                                </tr>
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td>@item.CriteriaID.ToString()</td>
+                                    <td>@item.CriteriaName</td>
+                                    <td>@item.Score.ToString() | <a asp-controller="JudgeViewSubmissions" asp-action="Update" asp-route-CriteriaId="@item.CriteriaID" asp-route-Competitorid="@Model.CompetitorID" asp-route-CompetitionId="@Model.CompetitionID">Update Score</a></td>
+                                </tr>
+                            }
                         }
-                        else
-                        {
-                            <tr>
-                                <td>@item.CriteriaID.ToString()</td>
-                                <td>@item.CriteriaName</td>
-                                <td>@item.Score.ToString() | <a asp-controller="JudgeViewSubmissions" asp-action="Update" asp-route-CriteriaId="@item.CriteriaID" asp-route-Competitorid="@Model.CompetitorID" asp-route-CompetitionId="@Model.CompetitionID">Update Score</a></td>
-                            </tr>
-                        }
-                    }
-                    @if (Model.criteriaList.Count!=0)
-                    {
-                        foreach (var item in Model.criteriaList)
+                        @foreach (var item in Model.critCheckList)
                         {
                             <tr>
                                 <td>@item.CriteriaID</td>
@@ -93,22 +132,25 @@
                             </tr>
 
                         }
-                    }
-                </tbody>
-            </table>
-        </div>
-        @if (Model.ResultReleasedDate < DateTime.Now)
-        {
-        <span style="color:red">@ViewData["Done"]</span>
+                    </tbody>
+                </table>
+            </div>
         }
         else
         {
-        <span style="color:red">@ViewData["NotDone"]</span>
+            <h5>No criteria for selected competition!</h5>
         }
-        <span style="color:red">@ViewData["ErrorMessage"]</span>
+
+        <span style="color:red">@ViewData["Date"]</span>
         <div>
             <a asp-controller="JudgeViewSubmissions" asp-action="ViewCompetitions">Back to List</a>
         </div>
 
     </fieldset>
 </form>
+<script>
+    document.getElementById("overlay").addEventListener('click', function () {
+        document.getElementById("overlay").style.display = "none";
+    });
+
+</script>

@@ -149,7 +149,7 @@ namespace WebApplication.DAL
             conn.Close();
             return (jvm);
         }
-        public List<JudgeViewSubmissions> GetCompetitionJudge(List<string> areaofinterestnameList,int judgeID)
+        public List<JudgeViewSubmissions> GetCompetitionJudge(List<string> areaofinterestnameList, int judgeID)
         {
             //Create a SqlCommand object from connection object
             SqlCommand cmd = conn.CreateCommand();
@@ -173,7 +173,7 @@ namespace WebApplication.DAL
                     new JudgeViewSubmissions
                     {
                         CompetitionID = reader.GetInt32(0),         //0: 1st column
-                        AreaInterest = areaofinterestnameList[reader.GetInt32(1)],
+                        AreaInterest = areaofinterestnameList[reader.GetInt32(1) - 1],
                         CompetitionName = !reader.IsDBNull(2) ? reader.GetString(2) : null,      //2: 3rd column
                         StartDate = !reader.IsDBNull(3) ? reader.GetDateTime(3) : (DateTime?)null,         //3: 4th column
                         EndDate = !reader.IsDBNull(4) ? reader.GetDateTime(4) : (DateTime?)null,           //4: 5th column
@@ -234,8 +234,8 @@ namespace WebApplication.DAL
 
             //Define the parameters used in SQL statement, value for each parameter
             //is retrieved from respective class's property.
-            cmd.Parameters.AddWithValue("@competitionID",jvm.CompetitionID );
-            cmd.Parameters.AddWithValue("@competitorID",jvm.CompetitorID );
+            cmd.Parameters.AddWithValue("@competitionID", jvm.CompetitionID);
+            cmd.Parameters.AddWithValue("@competitorID", jvm.CompetitorID);
             cmd.Parameters.AddWithValue("@critId", jvm.CriteriaID);
 
             //A connection to database must be opened before any operations made.

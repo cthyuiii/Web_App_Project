@@ -12,6 +12,19 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="AreaInterestID" class="control-label"></label>
+                <input asp-for="AreaInterestID" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="CompetitionID" class="control-label"></label>
+                <input asp-for="CompetitionID" class="form-control" />
+                <span asp-validation-for="CompetitionID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="CompetitionName" class="control-label"></label>
                 <input asp-for="CompetitionName" class="form-control" />
                 <span asp-validation-for="CompetitionName" class="text-danger"></span>
@@ -19,32 +32,23 @@
             <div class="form-group">
                 <label asp-for="StartDate" class="control-label"></label>
                 <input asp-for="StartDate" class="form-control" />
-                <span asp-validation-for="StartDate" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.StartDate)
             </div>
             <div class="form-group">
                 <label asp-for="EndDate" class="control-label"></label>
                 <input asp-for="EndDate" class="form-control" />
-                <span asp-validation-for="EndDate" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.EndDate)
             </div>
             <div class="form-group">
                 <label asp-for="ResultReleasedDate" class="control-label"></label>
                 <input asp-for="ResultReleasedDate" class="form-control" />
-                <span asp-validation-for="ResultReleasedDate" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.ResultReleasedDate)
             </div>
             <div class="form-group">
-                <label asp-for="JudgeID" class="control-label"></label>
-                <div class="col-sm-9 col-md-5">
-                    <!-- Drop-down list displaying Judge Name, with Judge ID as returned value -->
-                    <select asp-for="JudgeID"
-                            asp-items="@(new SelectList(
-                                    @ViewData["JudgeList"] as List <Judge>,"JudgeID", "JudgeName"))"
-                            class="form-control"></select>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="myButton" />
+                @Html.Raw(ViewData["ButtonState"])
             </div>
             <span style="color:green;">@TempData["SuccessMessage"]</span>
+            <span style="color:red;">@TempData["ErrorMessage"]</span>
         </form>
     </div>
 </div>

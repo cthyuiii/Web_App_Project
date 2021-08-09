@@ -131,7 +131,7 @@ namespace WebApplication.DAL
             cmd.CommandText = @"UPDATE Criteria
                                 SET CriteriaName =@critName,
                                 Weightage=@weigh
-                                WHERE CompetitionID = @compID and CriteriaID = @selectedCritID)";
+                                WHERE CompetitionID = @compID and CriteriaID = @selectedCritID";
 
             //Define the parameters used in SQL statement, value for each parameter
             //is retrieved from respective class's property.
@@ -147,34 +147,28 @@ namespace WebApplication.DAL
             cmd.ExecuteNonQuery();
             //A connection should be closed after operations.
             conn.Close();
-
-            //Return id when no error occurs.
         }
-        public int Delete(Criteria criteria)
+        public void Delete(Criteria criteria)
         {
             //Instantiate a SqlCommand object, supply it with a DELETE SQL statement
-            //to delete a criteria specified by a CriteriaID
-            int rowAffected = 0;
-
-            SqlCommand cmd6 = conn.CreateCommand();
-            cmd6.CommandText = @"UPDATE CompetitionScore SET CriteriaID=NULL
-                                    WHERE CriteriaID = @selectedCriteriaID";
-            cmd6.Parameters.AddWithValue("@selectedCriteriaID", criteria.CriteriaID);
 
             SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = @"DELETE FROM Criteria
-                                WHERE CriteriaID = @selectedCriteriaID";
-            cmd.Parameters.AddWithValue("@selectedCriteriaID", criteria.CriteriaID);
+            cmd.CommandText = @"DELETE FROM CompetitionScore
+                                    WHERE CriteriaID = @selectedCritID";
+            cmd.Parameters.AddWithValue("@selectedCritID", criteria.CriteriaID);
+
+            SqlCommand cmd1 = conn.CreateCommand();
+            cmd1.CommandText = @"DELETE FROM Criteria
+                                WHERE CriteriaID = @selectedCritID";
+            cmd1.Parameters.AddWithValue("@selectedCritID", criteria.CriteriaID);
 
             //Open a database connection
             conn.Open();
             //Execute the DELETE SQL to remove the staff record
-            rowAffected += cmd6.ExecuteNonQuery();
-            rowAffected += cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
+            cmd1.ExecuteNonQuery();
             //Close database connection
             conn.Close();
-            //Return number of row of staff record updated or deleted
-            return rowAffected;
         }
         public List<CompetitionViewModel> GetAllCompetition(List<string> areaofinterestnameList)
         {
@@ -196,7 +190,7 @@ namespace WebApplication.DAL
                     new CompetitionViewModel
                     {
                         CompetitionID = reader.GetInt32(0),         //0: 1st column
-                        AreaInterest = areaofinterestnameList[i],
+                        Name = areaofinterestnameList[i],
                         CompetitionName = !reader.IsDBNull(2) ? reader.GetString(2) : null,      //2: 3rd column
                         StartDate = !reader.IsDBNull(3) ? reader.GetDateTime(3) : (DateTime?)null,         //3: 4th column
                         EndDate = !reader.IsDBNull(4) ? reader.GetDateTime(4) : (DateTime?)null,          //4: 5th column
@@ -264,7 +258,7 @@ namespace WebApplication.DAL
 
             return critName;
         }
-        public List<Criteria> GetCritDetails (int CompetitionID,int CritID)
+        public List<Criteria> GetCritDetails(int CompetitionID, int CritID)
         {
             //Create a SqlCommand object from connection object
             SqlCommand cmd = conn.CreateCommand();
@@ -295,6 +289,34 @@ namespace WebApplication.DAL
             reader.Close();
             conn.Close();
             return criteriaList;
+        }
+        public int GetWeightage(int CritID)
+        {
+            //Create a SqlCommand object from connection object
+            SqlCommand cmd = conn.CreateCommand();
+            //Specify the SELECT SQL statement
+            cmd.CommandText = @"SELECT Weightage
+                                FROM Criteria
+                                WHERE CriteriaID=@selectedCriteriaId";
+
+            cmd.Parameters.AddWithValue("@selectedCriteriaId", CritID);
+            //Open a database connection
+            conn.Open();
+            //Execute the SELECT SQL through a DataReader
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            int weightage = 0;
+
+            while (reader.Read())
+            {
+                weightage = reader.GetInt32(0);
+            }
+            //Close DataReader
+            reader.Close();
+            //Close the database connection
+            conn.Close();
+
+            return weightage;
         }
     }
 }

@@ -8,14 +8,14 @@ namespace WebApplication.Models
 {
     public class CompetitionScore
     {
-        [Display(Name ="Criteria ID")]
+        [Display(Name = "Criteria ID")]
         public int CriteriaID { get; set; }
-        [Display(Name ="Competitor ID")]
+        [Display(Name = "Competitor ID")]
         public int CompetitorID { get; set; }
-        [Display(Name ="Competition ID")]
+        [Display(Name = "Competition ID")]
         public int CompetitionID { get; set; }
         public int Score { get; set; }
-        [Display(Name ="Last Edit Date")]
+        [Display(Name = "Last Edit Date")]
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime? DateTimeLastEdit { get; set; }

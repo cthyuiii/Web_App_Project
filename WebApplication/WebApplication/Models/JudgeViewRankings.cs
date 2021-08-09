@@ -32,7 +32,7 @@ namespace WebApplication.Models
         [StringLength(255, ErrorMessage = "Appeal cannot exceed 255 characters!")]
         public string Appeal { get; set; }
         public int Scores { get; set; }
-        [Display(Name ="Total Mark")]
+        [Display(Name = "Total Mark")]
         public double totalMark { get; set; }
         [Display(Name = "Result Released Date")]
         [DataType(DataType.DateTime)]
@@ -45,6 +45,7 @@ namespace WebApplication.Models
 
         public int? Ranking { get; set; }
         public bool markSet { get; set; }
+        public List<JudgeViewRankings> CompCountList { get; set; }
         public List<JudgeViewRankings> rankingDetails { get; set; }
         public List<JudgeViewRankings> scoresList { get; set; }
         public List<JudgeViewRankings> weightageList { get; set; }
@@ -53,6 +54,7 @@ namespace WebApplication.Models
             rankingDetails = new List<JudgeViewRankings>();
             scoresList = new List<JudgeViewRankings>();
             weightageList = new List<JudgeViewRankings>();
+            CompCountList = new List<JudgeViewRankings>();
         }
     }
 }

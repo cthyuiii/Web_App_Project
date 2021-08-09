@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
@@ -31,13 +32,13 @@ namespace WebApplication.Controllers
         {
             List<SelectListItem> areaIntList = new List<SelectListItem>();
             List<AreaInterest> aiList = judgeContext.GetAreaOfInterest();
-            foreach(AreaInterest ai in aiList)
+            foreach (AreaInterest ai in aiList)
             {
                 areaIntList.Add(new SelectListItem
                 {
                     Value = ai.AreaInterestID.ToString(),
                     Text = ai.Name
-                }) ;
+                });
             }
             return areaIntList;
         }
@@ -47,9 +48,9 @@ namespace WebApplication.Controllers
             if (judge.AreaInterestID != default(int))
             {
                 List<AreaInterest> areaIntList = judgeContext.GetAreaOfInterest();
-                foreach(AreaInterest ai in areaIntList)
+                foreach (AreaInterest ai in areaIntList)
                 {
-                    if(ai.AreaInterestID== judge.AreaInterestID)
+                    if (ai.AreaInterestID == judge.AreaInterestID)
                     {
                         areaInterest = ai.Name;
                         break;
@@ -70,6 +71,11 @@ namespace WebApplication.Controllers
         //GET: judge
         public IActionResult Index(Judge judge)
         {
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             List<JudgeViewModel> jList = new List<JudgeViewModel>();
             List<Judge> judgeList = judgeContext.GetAllJudges();
             foreach (Judge j in judgeList)
@@ -85,34 +91,62 @@ namespace WebApplication.Controllers
         }
 
         // GET: Judge/Create
-        public ActionResult Create()
+        public ActionResult ViewProfile()
         {
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            Judge judge = new Judge();
+            judge.JudgeID = (int)HttpContext.Session.GetInt32("judgeId");
+            judge = judgeContext.GetJudgeDetails(judge.JudgeID);
+            return View(judge);
+        }
+        public ActionResult Update()
+        {
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             ViewData["Salutations"] = salutDropDownList;
             ViewData["AreaInterest"] = GetAreaInterest();
-            return View();
+            Judge judge = new Judge();
+            judge.JudgeID = (int)HttpContext.Session.GetInt32("judgeId");
+            judge = judgeContext.GetJudgeDetails(judge.JudgeID);
+            return View(judge);
         }
-
-        //POST: Judge/Create
+        public ActionResult Delete()
+        {
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            Judge judge = new Judge();
+            judge.JudgeID = (int)HttpContext.Session.GetInt32("judgeId");
+            judge = judgeContext.GetJudgeDetails(judge.JudgeID);
+            return View(judge);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Judge judge)
+        public ActionResult Update(Judge judge)
         {
-            ViewData["Salutations"] = salutDropDownList;
-            ViewData["AreaInterest"] = GetAreaInterest();
-            if (ModelState.IsValid)
-            {
-                //Add judge record to database
-                judge.JudgeID = judgeContext.Add(judge);
-                TempData["SuccessMessage"] = "Judge Profile has been successfully created!";
-                //Redirect user to Judge/Create View
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                //Input validation fails, return to the Create view
-                //to display error message
-                return View(judge);
-            }
+
+            //Add judge record to database
+            judgeContext.Update(judge);
+            //Redirect user to Judge/Create View
+            return RedirectToAction("Index", "Judge");
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(Judge judge)
+        {
+            judgeContext.Delete(judge);
+            HttpContext.Session.Remove("Role");
+            //Redirect user to Judge/ Create View
+            return RedirectToAction("Index", "Home");
         }
 
     }

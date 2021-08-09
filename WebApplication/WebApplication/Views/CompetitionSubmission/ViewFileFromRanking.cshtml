@@ -26,17 +26,17 @@
     <div>
         @if (Model.Extension == "jpg")
         {
-            <img src="~/files/@Model.FileName" />
+            <img src="~/CompetitionWork/@Model.FileName" />
         }
         else if (Model.Extension == "mp4")
         {
             <video width="400" controls>
-                <source src="~/files/@Model.FileName" type="video/mp4" />
+                <source src="~/CompetitionWork/@Model.FileName" type="video/mp4" />
             </video>
         }
         else if (Model.Extension == "pdf")
         {
-            <a href="~/files/@Model.FileName">PDF File</a>
+            <a href="~/CompetitionWork/@Model.FileName">PDF File</a>
         }
         else
         {
@@ -44,7 +44,7 @@
         }
     </div>
     <div>
-        <a asp-action="Rankings" asp-route-id="@Model.CompetitionID" 
+        <a asp-action="Rankings" asp-route-id="@Model.CompetitionID"
            asp-controller="Competition">Back to List</a>
     </div>
 </body>

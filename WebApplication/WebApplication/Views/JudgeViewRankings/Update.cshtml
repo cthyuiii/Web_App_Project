@@ -68,7 +68,7 @@
                    class="col-sm-3 col-form-label"></label>
             <div class="col-sm-9 col-md-5">
                 <div class="col-sm-9 form-control-plaintext">
-                    @if (Model.markSet==false)
+                    @if (Model.markSet == false)
                     {
                         @Model.totalMark
                         <br />
@@ -138,18 +138,11 @@
                 </div>
             </div>
         }
+        <span style="color:red">@ViewData["RankingError"]</span>
         <div>
             <a asp-controller="JudgeViewRankings" asp-action="ViewCompetitions">Back to Competition List</a>
         </div>
-        @if (Model.ResultReleasedDate < DateTime.Now)
-        {
-            <span style="color:red">@ViewData["Done"]</span>
-        }
-        else
-        {
-            <span style="color:red">@ViewData["NotDone"]</span>
-        }
-        <span style="color:red">@ViewData["Error"]</span>
+        <span style="color:red">@ViewData["Date"]</span>
 
 
     </fieldset>

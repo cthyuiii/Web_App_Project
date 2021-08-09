@@ -7,7 +7,7 @@ using WebApplication.DAL;
 
 namespace WebApplication.Models
 {
-    public class ValidateJudgeEmail :ValidationAttribute
+    public class ValidateJudgeEmail : ValidationAttribute
     {
         private JudgeDAL judgeContext = new JudgeDAL();
         protected override ValidationResult IsValid(

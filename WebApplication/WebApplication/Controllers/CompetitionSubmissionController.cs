@@ -9,6 +9,9 @@ using System.IO;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApplication.DAL;
 using WebApplication.Models;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 namespace WebApplication.Controllers
 {
@@ -20,6 +23,7 @@ namespace WebApplication.Controllers
         // GET: CompetitorController
         public ActionResult ViewCompetition()
         {
+            // Get all competitions in database
             List<CompetitionViewModel> competitionList =
                 competitionContext.GetAllCompetition(competitionContext.GetAreaOfInterest());
             return View(competitionList);
@@ -27,7 +31,8 @@ namespace WebApplication.Controllers
 
         public ActionResult ViewCompetitionSubmission(int id)
         {
-            List<CompetitionSubmission> competitorsubmissionList = 
+            // Get all competition submissions for the selected competition from database
+            List<CompetitionSubmission> competitorsubmissionList =
                 competitorContext.GetAllCompetitionSubmission(
                     competitorContext.GetCompetitorName(id), id);
             return View(competitorsubmissionList);
@@ -35,24 +40,23 @@ namespace WebApplication.Controllers
 
         public ActionResult ViewFile(int competitionid, int competitorid)
         {
-            CompetitionSubmission competitionSubmission = new CompetitionSubmission
+            // Get all possible file names and store in it's variable as relative path
+            string jpgfilename = @"wwwroot\CompetitionWork\" + "File_" + competitorid + "_" + competitionid + ".jpg";
+            string mp4filename = @"wwwroot\CompetitionWork\" + "File_" + competitorid + "_" + competitionid + ".mp4";
+            string pdffilename = @"wwwroot\CompetitionWork\" + "File_" + competitorid + "_" + competitionid + ".pdf";
+            // If the competitor have a "jpg" file in the competition
+            if (System.IO.File.Exists(jpgfilename) == true)
             {
-                CompetitionID = competitionid,
-                CompetitorID = competitorid,
-            };
-            string jpgfilename = "File_" + competitorid + "_" + competitionid + ".jpg";
-            string mp4filename = "File_" + competitorid + "_" + competitionid + ".mp4";
-            string pdffilename = "File_" + competitorid + "_" + competitionid + ".pdf";
-            if (System.IO.File.Exists(jpgfilename))
-            {
-                Files file = new Files 
-                { 
+                // Init file
+                Files file = new Files
+                {
                     Extension = "jpg",
                     FileName = jpgfilename,
                 };
                 return View(file);
             }
-            else if (System.IO.File.Exists(mp4filename))
+            // If the competitor have a "mp4" file in the competition
+            else if (System.IO.File.Exists(mp4filename) == true)
             {
                 Files file = new Files
                 {
@@ -62,9 +66,10 @@ namespace WebApplication.Controllers
                 };
                 return View(file);
             }
-            else if (System.IO.File.Exists(pdffilename))
+            // If the competitor have a "pdf" file in the competition
+            else if (System.IO.File.Exists(pdffilename) == true)
             {
-                Files file = new Files 
+                Files file = new Files
                 {
                     CompetitionID = competitionid,
                     Extension = "pdf",
@@ -72,12 +77,13 @@ namespace WebApplication.Controllers
                 };
                 return View(file);
             }
+            // If the competitor does not have any files uploaded in the competition
             else
             {
-                Files file = new Files 
+                Files file = new Files
                 {
                     CompetitionID = competitionid,
-                    Extension = "none" 
+                    Extension = "none"
                 };
                 return View(file);
             }
@@ -85,15 +91,11 @@ namespace WebApplication.Controllers
 
         public ActionResult ViewFileFromRanking(int competitionid, int competitorid)
         {
-            CompetitionSubmission competitionSubmission = new CompetitionSubmission
-            {
-                CompetitionID = competitionid,
-                CompetitorID = competitorid,
-            };
-            string jpgfilename = "File_" + competitorid + "_" + competitionid + ".jpg";
-            string mp4filename = "File_" + competitorid + "_" + competitionid + ".mp4";
-            string pdffilename = "File_" + competitorid + "_" + competitionid + ".pdf";
-            if (System.IO.File.Exists(jpgfilename))
+            // Basically the same codes from method "ViewFile"
+            string jpgfilename = @"wwwroot\CompetitionWork\" + "File_" + competitorid + "_" + competitionid + ".jpg";
+            string mp4filename = @"wwwroot\CompetitionWork\" + "File_" + competitorid + "_" + competitionid + ".mp4";
+            string pdffilename = @"wwwroot\CompetitionWork\" + "File_" + competitorid + "_" + competitionid + ".pdf";
+            if (System.IO.File.Exists(jpgfilename) == true)
             {
                 Files file = new Files
                 {
@@ -102,7 +104,7 @@ namespace WebApplication.Controllers
                 };
                 return View(file);
             }
-            else if (System.IO.File.Exists(mp4filename))
+            else if (System.IO.File.Exists(mp4filename) == true)
             {
                 Files file = new Files
                 {
@@ -112,7 +114,7 @@ namespace WebApplication.Controllers
                 };
                 return View(file);
             }
-            else if (System.IO.File.Exists(pdffilename))
+            else if (System.IO.File.Exists(pdffilename) == true)
             {
                 Files file = new Files
                 {
@@ -135,20 +137,30 @@ namespace WebApplication.Controllers
 
         public ActionResult Vote(int competitorid, int competitionid)
         {
+            // Get all the details from the selected competition
             Competition competition = competitionContext.GetDetails(competitionid);
-            string voteStatus = HttpContext.Session.GetString("Vote");
+            // Get the session string stored in the user's browser to check if the user had voted for
+            // anyone in the selected competition
+            string voteStatus = HttpContext.Session.GetString(competitionid.ToString());
+            // If the session string is "Yes", means that the user had already voted for somebody in the
+            // competition
             if (voteStatus == "Yes")
             {
+                // Tell user that they had voted
                 TempData["Message"] = "You have already voted!";
+                // Pass vote's competitionID in view so that "Back to List" will redirect user to the
+                // correct competition submission page
                 Vote vote = new Vote
                 {
                     CompetitionID = competitionid
                 };
                 return View(vote);
             }
+            // If the competition have not even started yet
             else if (competition.StartDate > DateTime.Now)
             {
-                TempData["Message"] = "Voting have not starting yet!";
+                // Tell user that voting have not started yet
+                TempData["Message"] = "Voting have not started yet!";
                 Vote vote = new Vote
                 {
                     CompetitionID = competitionid
@@ -157,10 +169,14 @@ namespace WebApplication.Controllers
             }
             else
             {
+                // If competition is ongoing
                 if (competition.StartDate < DateTime.Now && competition.EndDate > DateTime.Now)
                 {
+                    // Vote competitor in database
                     competitorContext.Vote(competitionid, competitorid);
-                    HttpContext.Session.SetString("Vote", "Yes");
+                    // Set the session string stored in the user's browser
+                    HttpContext.Session.SetString(competitionid.ToString(), "Yes");
+                    // Tell user that the voting is successful
                     TempData["Message"] = "Voting successful!";
                     Vote vote = new Vote
                     {
@@ -170,6 +186,7 @@ namespace WebApplication.Controllers
                 }
                 else
                 {
+                    // Tell user that the voting have already ended
                     TempData["Message"] = "Voting have already ended!";
                     Vote vote = new Vote
                     {

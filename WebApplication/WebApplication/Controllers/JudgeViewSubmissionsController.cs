@@ -17,6 +17,7 @@ namespace WebApplication.Controllers
         private CompetitionDAL competitionContext = new CompetitionDAL();
         private JudgeViewSubmissionsDAL jvmContext = new JudgeViewSubmissionsDAL();
         private CriteriaDAL criteriaContext = new CriteriaDAL();
+        private JudgeDAL judgeContext = new JudgeDAL();
 
         private IWebHostEnvironment Environment;
         public JudgeViewSubmissionsController(IWebHostEnvironment _environment)
@@ -33,12 +34,17 @@ namespace WebApplication.Controllers
         }
         public ActionResult ViewCompetitions(int? id)
         {
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             int judgeId = (int)HttpContext.Session.GetInt32("judgeId");
             List<JudgeViewSubmissions> competitionList = jvmContext.GetCompetitionJudge(
-                competitionContext.GetAreaOfInterest(),judgeId);
+                judgeContext.InterestNameList(), judgeId);
             JudgeViewSubmissions competitionCriteriaVM = new JudgeViewSubmissions();
             competitionCriteriaVM.competitionList = competitionList;
-            if(competitionCriteriaVM.competitionList.Count==0)
+            if (competitionCriteriaVM.competitionList.Count == 0)
             {
                 ViewData["noComp"] = "No Competition Assigned Yet\n Please Wait To Be Assigned";
             }
@@ -59,41 +65,45 @@ namespace WebApplication.Controllers
         }
         public ActionResult ViewSubmissions(int CompetitorId, int CompetitionId)
         {
-            JudgeViewSubmissions jVM = new JudgeViewSubmissions();
-            jVM = jvmContext.GetCompetitorSubmission(CompetitorId, CompetitionId);
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            JudgeViewSubmissions jVM = jvmContext.GetCompetitorSubmission(CompetitorId, CompetitionId);
             string CompetitionName = criteriaContext.CompetitionName(CompetitionId);
             ViewData["Competition"] = CompetitionName;
             jVM.CompetitionID = CompetitionId;
             jVM.CompetitorID = CompetitorId;
             Competition resultReleasedDate = competitionContext.GetDetails(CompetitionId);
             jVM.ResultReleasedDate = resultReleasedDate.ResultReleasedDate;
-            List<Criteria> critList = criteriaContext.GetCompetitionCriteria(CompetitionId);
-            jVM.criteriaList = critList;
+            jVM.criteriaList = criteriaContext.GetCompetitionCriteria(CompetitionId);
+            jVM.critCheckList = criteriaContext.GetCompetitionCriteria(CompetitionId);
             List<JudgeViewSubmissions> Vmcheck = jvmContext.VMCheckList(CompetitionId, CompetitorId);
             jVM.VMCheckList = Vmcheck;
-            foreach (var item in jVM.criteriaList.ToList())
+            foreach (var item in jVM.critCheckList.ToList())
             {
                 foreach (var Item in jVM.VMCheckList)
                 {
                     if (item.CriteriaID == Item.CriteriaID)
                     {
-                        jVM.criteriaList.Remove(item);
+                        jVM.critCheckList.Remove(item);
                     }
                 }
             }
             if (jVM.ResultReleasedDate <= DateTime.Now)
             {
-                ViewData["Done"] = "Competition Has Ended! No editting of scores allowed";
+                ViewData["Date"] = "Competition Has Ended! No editting of scores allowed";
             }
             else
             {
-                ViewData["NotDone"] = "Competition Result is finalizing on" + jVM.ResultReleasedDate.ToString();
+                ViewData["Date"] = "Competition Result is finalizing on" + jVM.ResultReleasedDate.ToString();
             }
             //Fetch all files in the Folder (Directory).
             //string[]filePaths = Directory.GetFiles(Path.Combine(this.Environment.WebRootPath, "files\\"));
             if (jVM.FileSubmitted != null)
             {
-                jVM.FilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\files", jVM.FileSubmitted);
+                jVM.FilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\CompetitionWork", jVM.FileSubmitted);
             }
             else if (jVM.FileSubmitted == null)
             {
@@ -105,7 +115,7 @@ namespace WebApplication.Controllers
         public FileResult DownloadFile(string fileName)
         {
             //Build the File Path.
-            string path = Path.Combine(this.Environment.WebRootPath, "Files\\") + fileName;
+            string path = Path.Combine(this.Environment.WebRootPath, "CompetitionWork\\") + fileName;
 
             //Read the File data into Byte Array.
             byte[] bytes = System.IO.File.ReadAllBytes(path);
@@ -114,6 +124,11 @@ namespace WebApplication.Controllers
         }
         public ActionResult Create(int CompetitorId, int CompetitionId, int CriteriaId)
         {
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             JudgeViewSubmissions jVM = new JudgeViewSubmissions();
             jVM = jvmContext.GetCompetitorSubmission(CompetitorId, CompetitionId);
             string CompetitionName = criteriaContext.CompetitionName(CompetitionId);
@@ -124,28 +139,47 @@ namespace WebApplication.Controllers
             jVM.CriteriaName = criteriaContext.GetCritName(CriteriaId);
             Competition resultReleasedDate = competitionContext.GetDetails(CompetitionId);
             jVM.ResultReleasedDate = resultReleasedDate.ResultReleasedDate;
-            if (jVM.ResultReleasedDate <= DateTime.Now)
+            List<Criteria> criteriaList = criteriaContext.GetCompetitionCriteria(CompetitionId);
+            foreach (Criteria c in criteriaList)
             {
-                ViewData["Done"] = "Competition Has Ended! No editting of scores allowed";
+                if (c.CompetitionID == CompetitionId)
+                {
+                    jVM.TWeightage += c.Weightage;
+                }
             }
-            else
+            if (jVM.TWeightage != 100)
             {
-                ViewData["NotDone"] = "Competition Result is finalizing on" + jVM.ResultReleasedDate.ToString();
+                HttpContext.Session.SetString("TempData", "true");
+                JudgeViewSubmissions judgeVM = new JudgeViewSubmissions()
+                {
+                    CompetitionName = jVM.CompetitionName,
+                    CompetitionID = jVM.CompetitionID,
+                    CompetitorID = jVM.CompetitorID,
+                    CriteriaID = jVM.CriteriaID,
+                    CriteriaName = jVM.CriteriaName,
+                    ResultReleasedDate = jVM.ResultReleasedDate
+                };
+                return RedirectToAction("ViewSubmissions", judgeVM);
             }
             //Fetch all files in the Folder (Directory).
             //string[]filePaths = Directory.GetFiles(Path.Combine(this.Environment.WebRootPath, "files\\"));
             if (jVM.FileSubmitted != null)
             {
-                jVM.FilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\files", jVM.FileSubmitted);
+                jVM.FilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\CompetitionWork", jVM.FileSubmitted);
             }
             else if (jVM.FileSubmitted == null)
             {
                 ViewData["FileSubmittedFalse"] = "No File Submitted";
-            }  
+            }
             return View(jVM);
         }
         public ActionResult Update(int CompetitorId, int CompetitionId, int CriteriaId)
         {
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Judge"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
             JudgeViewSubmissions jVM = new JudgeViewSubmissions();
             jVM = jvmContext.GetCompetitorSubmission(CompetitorId, CompetitionId);
             string CompetitionName = criteriaContext.CompetitionName(CompetitionId);
@@ -157,14 +191,6 @@ namespace WebApplication.Controllers
             jVM.Score = jvmContext.GetScore(jVM);
             Competition resultReleasedDate = competitionContext.GetDetails(CompetitionId);
             jVM.ResultReleasedDate = resultReleasedDate.ResultReleasedDate;
-            if (jVM.ResultReleasedDate <= DateTime.Now)
-            {
-                ViewData["Done"] = "Competition Has Ended! No editting of scores allowed";
-            }
-            else
-            {
-                ViewData["NotDone"] = "Competition Result is finalizing on" + jVM.ResultReleasedDate.ToString();
-            }
             //Fetch all files in the Folder (Directory).
             //string[]filePaths = Directory.GetFiles(Path.Combine(this.Environment.WebRootPath, "files\\"));
             if (jVM.FileSubmitted != null)
@@ -184,7 +210,7 @@ namespace WebApplication.Controllers
             if (ModelState.IsValid)
             {
                 jvmContext.Add(jvm);
-                return RedirectToAction("ViewSubmissions", "JudgeViewSubmissions",jvm);
+                return RedirectToAction("ViewSubmissions", "JudgeViewSubmissions", jvm);
             }
             else
             {
@@ -251,11 +277,11 @@ namespace WebApplication.Controllers
                 }
                 if (judgeVM.ResultReleasedDate <= DateTime.Now)
                 {
-                    ViewData["Done"] = "Competition Has Ended! No editting of scores allowed";
+                    ViewData["Date"] = "Competition Has Ended! No editting of scores allowed";
                 }
                 else
                 {
-                    ViewData["NotDone"] = "Competition Result is finalizing on" + judgeVM.ResultReleasedDate.ToString();
+                    ViewData["Date"] = "Competition Result is finalizing on" + judgeVM.ResultReleasedDate.ToString();
                 }
                 return View(judgeVM);
             }

@@ -19,6 +19,15 @@
             </div>
         </div>
         <div class="form-group row">
+            <label asp-for="CriteriaID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="CriteriaID" readonly class="form-control-plaintext" />
+                <span asp-validation-for="CriteriaID"
+                      class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
             <label asp-for="CriteriaName"
                    class="col-sm-3 col-form-label"></label>
             <div class="col-sm-9 col-md-5">

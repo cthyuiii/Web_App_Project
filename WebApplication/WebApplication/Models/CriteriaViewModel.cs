@@ -8,18 +8,18 @@ namespace WebApplication.Models
 {
     public class CriteriaViewModel
     {
-        [Display(Name ="Criteria ID")]
+        [Display(Name = "Criteria ID")]
         public int CriteriaID { get; set; }
-        [Display(Name ="Competition Name")]
+        [Display(Name = "Competition Name")]
         public int CompetitionID { get; set; }
-        [Display(Name ="Competition")]
+        [Display(Name = "Competition")]
         public string CompetitionName { get; set; }
-        [Display(Name ="Name of Criteria")]
-        [Required(ErrorMessage ="Please enter a name!")]
-        [StringLength(50,ErrorMessage = "Criteria name cannot exceed 50 characters!")]
+        [Display(Name = "Name of Criteria")]
+        [Required(ErrorMessage = "Please enter a name!")]
+        [StringLength(50, ErrorMessage = "Criteria name cannot exceed 50 characters!")]
         public string CriteriaName { get; set; }
-        [Display(Name ="Weightage")]
-        [Required(ErrorMessage ="Please enter a weightage value (1 to 100)")]
+        [Display(Name = "Weightage")]
+        [Required(ErrorMessage = "Please enter a weightage value (1 to 100)")]
         public int Weightage { get; set; }
         public int TWeightage { get; set; }
         public List<Criteria> criteriaList { get; set; }

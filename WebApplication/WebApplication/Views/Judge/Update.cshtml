@@ -1,16 +1,20 @@
 ﻿@model WebApplication.Models.Judge
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Update";
 }
 
-<h1>Create Judge Profile</h1>
+<h1>Update Judge Profile</h1>
 
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Update">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="JudgeID" class="control-label"></label>
+                <input asp-for="JudgeID" class="form-control" readonly />
+            </div>
             <div class="form-group">
                 <label asp-for="JudgeName" class="control-label"></label>
                 <input asp-for="JudgeName" class="form-control" />
@@ -37,23 +41,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="EmailAddr" class="control-label"></label>
-                <input asp-for="EmailAddr" class="form-control" />
-                <span asp-validation-for="EmailAddr" class="text-danger"></span>
+                <input asp-for="EmailAddr" class="form-control" readonly />
             </div>
             <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
+                <input type="submit" value="Update" class="btn btn-primary" />
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="myButton" />
-            </div>
-            <span style="color:green;">@TempData["SuccessMessage"]</span>
         </form>
     </div>
 </div>
+<span style="color:red">@ViewData["error"]</span>
 
 <div>
-    <a asp-action="Login"
-       asp-controller="Home">Login with new Judge profile</a>
+    <a asp-action="ViewProfile"
+       asp-controller="Judge">Back To Profile</a>
 </div>

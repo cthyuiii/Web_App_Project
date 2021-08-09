@@ -19,9 +19,10 @@
                         <td>@item.CompetitorName</td>
                         <td>@item.FileSubmitted</td>
                         <td>@item.Ranking</td>
-                        <td><a asp-action="ViewFileFromRanking" asp-controller="CompetitionSubmission"
-                            asp-route-competitorid="@item.CompetitorID"
-                            asp-route-competitionid="@item.CompetitionID">File</a>
+                        <td>
+                            <a asp-action="ViewFileFromRanking" asp-controller="CompetitionSubmission"
+                               asp-route-competitorid="@item.CompetitorID"
+                               asp-route-competitionid="@item.CompetitionID">File</a>
                         </td>
                     </tr>
                 }

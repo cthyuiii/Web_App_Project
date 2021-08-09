@@ -1,0 +1,268 @@
+﻿@model IEnumerable<WebApplication.Models.Judge>
+@{
+    ViewData["Title"] = "ViewJudges";
+    List<Competition> UpcomingCompetition = (List<Competition>)ViewData["UpcomingCompetition"];
+}
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+
+@section Scripts {
+    <script>
+        // Definiing variables
+        var model = @Html.Raw(Json.Serialize(Model));
+        var futureComp = @Html.Raw(Json.Serialize(UpcomingCompetition));
+        var selectedJudge = [];
+        var compArray = [];
+
+        function AssignToCompetition() {
+            selectedJudge = [];
+            $('#judgeCheck input:checked').each(function () {
+                selectedJudge.push($(this).attr('name'));
+            });
+            // if not judge is selected
+            if (selectedJudge.length == 0) {
+                alert("Please select a Judge");
+            }
+            // Validation + creating Html
+            else {
+                var areaInterestIdList = [];
+                selectedJudge.forEach((JudgeID) => {
+                    model.forEach((m) => {
+                        if (JudgeID == m.JudgeID) {
+                            areaInterestIdList.push(m.areaInterestID);
+                        }
+                    });
+                });
+                // Validation section
+                if (areaInterestIdList.every((val, i, arr) => val === arr[0])) {
+                    var areaInterestId = areaInterestIdList[0];
+                    var count = 0;
+                    model.forEach((m) => {
+                        if (m.areaInterestID == areaInterestId && m.AssignedCompetition.length == 1) {
+                            count++;
+                        }
+                    });
+                    // If the count of selected judges via using areainterstid and assigned competition is less than two, throw errormessage.
+                    if (count < 2) {
+                        if (selectedJudge.length != 2) {
+                            alert("Please assign at least 2 judges");
+                            return;
+                        }
+                    }
+                    // Validation to check if future competitions have the same area interest
+                    var validCompetition = [];
+                    futureComp.forEach((c) => {
+                        if (areaInterestId == c.areaInterestId) {
+                            validCompetition.push(c);
+                        }
+                    });
+                    // Similarly, Validation to check if current competitions have the same area interest
+                    var haveCompetition = false;
+                    haveCompetition.forEach((c) => {
+                        if (areaInterestId == c.areaInterestId) {
+                            haveCompetition = true;
+                        }
+                    });
+                    // Else error message displays none competitions for area interest
+                    if (!haveCompetition) {
+                        alert('There are no competitions created for this area of interest');
+                        return;
+                    }
+                    // Inserting Html section
+                    var html = "";
+                    for (var i = 0; i < validCompetition.length; i++) {
+                        var startdate = new Date(Date.parse(validCompetition[i].startDate));
+                        var startDateString = formatDatetime(startdate, true);
+                        var enddate = new Date(Date.parse(validCompetition[i].endDate));
+                        var endDateString = formatDatetime(enddate, false); html += "<tr>";
+                        html += "<td><div class=\"form-group\">";
+                        html += "<input type=\"checkbox\" name=\"" + validCompetition[i].competitionID + "\" class=\"form-control\"" + i + "\">";
+                        html += "<label class=\"control-label\"" + i + "\"></label>";
+                        html += "</div></td>";
+                        html += "<td>";
+                        html += "<p>" + validCompetition[i].competitionName + "</p>";
+                        html += "</div></td>";
+                        html += "<td>";
+                        html += "<p>" + startDateString + " - " + endDateString + "</p>";
+                        html += "</td>";
+                    }
+                    $('#checkCompetition').html(html);
+                    $('#checkCompetition tr td').on('click', '.cbCheck', function () {
+                        if ($(this).is(':checked')) {
+                            compArray.push($(this).attr('name'));
+                        }
+                        else {
+                            compArray.splice(compArray.indexOf($(this).attr('name')), 1);
+                        }
+                    });
+                    $('#AssignCompetitionModal').modal('show');
+                }
+                else {
+                    alert('Both Area of Interest of Judges and Competitions must MATCH to assign!');
+                }
+            }
+        }
+        // Function to unassign judge from competition.
+        function UnassignCompetition(judgeId, compId, compName) {
+            var count = 0;
+            model.forEach((judge) => {
+                if (judge.AssignedCompetition.length == 1) {
+                    if (judge.AssignedCompetition[0].competitionID == compId) {
+                        count++;
+                    }
+                }
+            });
+            if (count == 2) {
+                alert('There must be at least 2 judges to judge this competition!');
+            }
+            else {
+                $('#UnassignModalBody').html(compName);
+                $('#UnassignedJudgeBtn').attr('onclick', 'UnassignJudge(' + judgeId + ', ' + compId + ')');
+                $('#UnassignModal').modal('show');
+            }
+        }
+        // Connect to Controller method to parse judge id and competition id
+        function unassignJudge(judgeid, competitionid) {
+            $("#Unassign").attr('action', '/Competition/UnassignJudgeFromCompetition/?judgeid=' + judgeid + '&competitionid=' + competitionid);
+            $("#Unassign").submit();
+        }
+        // Unassigned message
+        function UnassignJudgeSuccessMessage() {
+            alert('Unassigned Judge from competition');
+        }
+        // Function to assign judge
+        function AssignJudge() {
+            var compString = '';
+            compArray.forEach((c) => {
+                compString += c + '-';
+            });
+            compString = compString.substring(0, compString.length - 1);
+            if (compString.length == 0) {
+                alert("Please select a competition to Assign");
+            } else {
+                var judgeStr = '';
+                selectedJudge.forEach((judge) => {
+                    judgeStr += judge + '-';
+                });
+                judgeStr = judgeStr.substring(0, judgeStr.length - 1);
+                // Connect to Controller method to parse judge name and competition name
+                $("#Assign").attr('action', '/Competition/AssignJudgeToCompetition/?judgeid=' + judgeStr + '&competitionid=' + compString);
+                $("#Assign").submit();
+            }
+        }
+
+        function AssignJudgeSuccessMessage() {
+            alert('Successfully Assigned Judge');
+        }
+
+        $(document).ready(function () {
+            @if (TempData["JqueryViewJudges"] != null)
+            {
+                @Html.Raw(TempData["JqueryViewJudges"])
+            }
+        });
+    </script>
+}
+<body>
+    <h2>Select Judges</h2>
+    <div class="table-responsive">
+        <input type="submit" onclick="AssignToCompetition()" ;" />
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th></th>
+                    <th>Salutation</th>
+                    <th>Name</th>
+                    <th>Area of Interest</th>
+                    <th>Email Address</th>
+                    <th>Competition Assigned</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    string text = "";
+                    foreach (Competition c in Model.ElementAt(i).AssignedCompetition)
+                    {
+                        text += c.CompetitionName;
+                    }
+                    if (Model.ElementAt(i).AssignedCompetition.Count() == 0)
+                    {
+                        text = "Not Assigned";
+                    }
+                    else
+                    {
+                        text = Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionName;
+                    }
+                    <tr>
+                        <td>
+                            @if (Model.ElementAt(i).AssignedCompetition.Count() == 0)
+                            {
+                                <input type="checkbox" class="form-control" name="@Model.ElementAt(i).JudgeID">
+                                <label class="control-label"></label>
+                            }
+                            else
+                            {
+                                <input type="checkbox" class="form-control" disabled>
+                                <label class="control-label"></label>
+                            }
+                        </td>
+                        <td><p>@Model.ElementAt(i).Salutation</p></td>
+                        <td><p>@Model.ElementAt(i).Name</p></td>
+                        <td><p>@Model.ElementAt(i).AreaInterestName</p></td>
+                        <td><p>@Model.ElementAt(i).EmailAddr</p></td>
+                        <td><p>@Html.Raw(text)</p></td>
+                        <td>
+                            @if (Model.ElementAt(i).AssignedCompetition.Count() == 0)
+                            {
+                                <p>@Html.Raw(text)</p>
+                            }
+                            else
+                            {
+                                <input type='submit' value='Delete Competition' class='myButton'
+                                       onclick="UnassignCompetition('@Model.ElementAt(i).JudgeID',
+                                                                    '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionID',
+                                                                    '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionName')" />
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="modal" id="AssignCompetitionModal">
+        <h4>Assign Judge</h4>
+        <input type="submit" class="myButton" data-dismiss="modal" value='Exit' />
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th></th>
+                        <th>Name of Competition</th>
+                        <th>Date of Competition</th>
+                    </tr>
+                </thead>
+                <tbody id="checkCompetition">
+                </tbody>
+            </table>
+        </div>
+        <form id="Assign" method="post">
+            <button type="button" onclick="AssignJudge()">Assign</button>
+        </form>
+    </div>
+
+    <div class="modal" id="UnassignModal">
+        <h4>Unassign Judge</h4>
+        <input type="submit" class="myButton" data-dismiss="modal" value='Exit' />
+        <div class="modal-body">
+            Name of Competition:
+            <div id="UnassignModalBody">
+            </div>
+        </div>
+        <form id="Unassign" method="post">
+            <button type="button" id="UnassignedJudgeBtn" class="myButton">Unassign Competition</button>
+        </form>
+    </div>
+</body>

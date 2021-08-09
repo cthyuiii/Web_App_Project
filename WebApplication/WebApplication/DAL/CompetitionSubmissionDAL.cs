@@ -51,6 +51,7 @@ namespace WebApplication.DAL
             List<string> competitornameList = new List<string>();
             while (reader.Read())
             {
+                // Add competitor's name in list for each data
                 competitornameList.Add(reader.GetString(0));
             }
             //Close DataReader

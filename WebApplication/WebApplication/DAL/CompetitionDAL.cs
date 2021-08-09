@@ -19,11 +19,11 @@ namespace WebApplication.DAL
         public CompetitionDAL()
         {
             //Read ConnectionString from appsettings.json file
-            var builder = new ConfigurationBuilder()                
-                .SetBasePath(Directory.GetCurrentDirectory())                
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
 
-            Configuration = builder.Build(); 
+            Configuration = builder.Build();
             string strConn = Configuration.GetConnectionString("CJPConnectionString");
 
             //Instantiate a SqlConnection object with the              
@@ -34,13 +34,13 @@ namespace WebApplication.DAL
         public List<string> GetAreaOfInterest()
         {
             //Create a SqlCommand object from connection object
-            SqlCommand cmd = conn.CreateCommand();            
+            SqlCommand cmd = conn.CreateCommand();
             //Specify the SELECT SQL statement
             cmd.CommandText = @"SELECT Name
                                 FROM AreaInterest a, Competition c
-                                WHERE a.AreaInterestID = c.AreaInterestID";            
+                                WHERE a.AreaInterestID = c.AreaInterestID";
             //Open a database connection
-            conn.Open();             
+            conn.Open();
             //Execute the SELECT SQL through a DataReader
             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -50,7 +50,7 @@ namespace WebApplication.DAL
                 areaofinterestnameList.Add(reader.GetString(0));
             }
             //Close DataReader
-            reader.Close();            
+            reader.Close();
             //Close the database connection
             conn.Close();
 
@@ -123,11 +123,11 @@ namespace WebApplication.DAL
         public List<CompetitionViewModel> GetAllCompetition(List<string> areaofinterestnameList)
         {
             //Create a SqlCommand object from connection object
-            SqlCommand cmd = conn.CreateCommand();            
+            SqlCommand cmd = conn.CreateCommand();
             //Specify the SELECT SQL statement
-            cmd.CommandText = @"SELECT * FROM Competition ORDER BY CompetitionID";            
+            cmd.CommandText = @"SELECT * FROM Competition ORDER BY CompetitionID";
             //Open a database connection
-            conn.Open();             
+            conn.Open();
             //Execute the SELECT SQL through a DataReader
             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -140,7 +140,7 @@ namespace WebApplication.DAL
                     new CompetitionViewModel
                     {
                         CompetitionID = reader.GetInt32(0),         //0: 1st column
-                        AreaInterest = areaofinterestnameList[i],
+                        Name = areaofinterestnameList[i],
                         CompetitionName = reader.GetString(2),      //2: 3rd column
                         StartDate = reader.GetDateTime(3),          //3: 4th column
                         EndDate = reader.GetDateTime(4),            //4: 5th column
@@ -149,13 +149,49 @@ namespace WebApplication.DAL
                 i++;
             }
             //Close DataReader
-            reader.Close();            
+            reader.Close();
             //Close the database connection
             conn.Close();
 
             return competitionList;
         }
+        // Get all upcoming competitions
+        public List<Competition> GetUpcomingCompetition()
+        {
+            //Create a SqlCommand object from connection object
+            SqlCommand cmd = conn.CreateCommand();
+            //Specify the SELECT SQL statement
+            cmd.CommandText = @"SELECT * FROM Competition WHERE StartDate > @now ORDER BY CompetitionId";
+            cmd.Parameters.AddWithValue("@today", DateTime.Now);
+            //Open a database connection
+            conn.Open();
+            //Execute the SELECT SQL through a DataReader
+            SqlDataReader reader = cmd.ExecuteReader();
 
+            //Read all records until the end, save data into a competition list
+            List<Competition> competitionList = new List<Competition>();
+            int i = 0;
+            while (reader.Read())
+            {
+                competitionList.Add(
+                    new Competition
+                    {
+                        CompetitionID = reader.GetInt32(0),
+                        AreaInterestID = reader.GetInt32(1),
+                        CompetitionName = reader.GetString(2),      //2: 3rd column
+                        StartDate = reader.GetDateTime(3),          //3: 4th column
+                        EndDate = reader.GetDateTime(4),            //4: 5th column
+                        ResultReleasedDate = reader.GetDateTime(5), //5: 6th column
+                    });
+                i++;
+            }
+            //Close DataReader
+            reader.Close();
+            //Close the database connection
+            conn.Close();
+
+            return competitionList;
+        }
         public CompetitionViewModel GetJoinedCompetition(string areaofinterestName, int competitionId)
         {
             CompetitionViewModel compVM = new CompetitionViewModel();
@@ -176,14 +212,14 @@ namespace WebApplication.DAL
                 while (reader.Read())
                 {
                     compVM.CompetitionID = reader.GetInt32(0);         //0: 1st column
-                    compVM.AreaInterest = areaofinterestName;
+                    compVM.Name = areaofinterestName;
                     compVM.CompetitionName = reader.GetString(2);      //2: 3rd column
                     compVM.StartDate = reader.GetDateTime(3);          //3: 4th column
                     compVM.EndDate = reader.GetDateTime(4);            //4: 5th column
                     compVM.ResultReleasedDate = reader.GetDateTime(5); //5: 6th column
                 }
             }
-      
+
             //Close DataReader
             reader.Close();
             //Close the database connection
@@ -203,7 +239,7 @@ namespace WebApplication.DAL
                                 VALUES(@areainterestid,@competitionname,@startdate,@enddate,@resultreleaseddate)";
             //Define the parameters used in SQL statement, value for each parameter
             //is retrieved from respective class's property.
-            cmd.Parameters.AddWithValue("@areainterestname", competition.AreaInterestID);
+            cmd.Parameters.AddWithValue("@areainterestid", competition.AreaInterestID);
             cmd.Parameters.AddWithValue("@competitionname", competition.CompetitionName);
             cmd.Parameters.AddWithValue("@startdate", competition.StartDate);
             cmd.Parameters.AddWithValue("@enddate", competition.EndDate);
@@ -264,29 +300,22 @@ namespace WebApplication.DAL
             return competition;
         }
         // Return number of row updated
-        public int Update(Competition competition, Judge judge)
+        public int Update(Competition competition)
         {
             //Create a SqlCommand object from connection object
             SqlCommand cmd = conn.CreateCommand();
             //Specify an UPDATE SQL statement
-            cmd.CommandText = @"UPDATE Staff SET AreaInterest=@areainterest, CompetitionName=@competitionName,
+            cmd.CommandText = @"UPDATE Competition SET AreaInterestID=@areaInterestID, CompetitionName=@competitionName,
                                 StartDate=@startDate, EndDate = @endDate, ResultReleasedDate=@resultsReleasedDate
-                                JudgeID=@judgeID
                                 WHERE CompetitionID = @selectedCompetitionID";
             //Define the parameters used in SQL statement, value for each parameter
             //is retrieved from respective class's property.
-            cmd.Parameters.AddWithValue("@areainterest", competition.AreaInterestID);
+            cmd.Parameters.AddWithValue("@areaInterestID", competition.AreaInterestID);
             cmd.Parameters.AddWithValue("@competitionName", competition.CompetitionName);
             cmd.Parameters.AddWithValue("@startDate", competition.StartDate);
             cmd.Parameters.AddWithValue("@endDate", competition.EndDate);
             cmd.Parameters.AddWithValue("@resultsReleasedDate", competition.ResultReleasedDate);
-
-            if (judge.JudgeID != 0)
-                // A branch is assigned
-                cmd.Parameters.AddWithValue("@judgeID", judge.JudgeID);
-            else // No branch is assigned
-                cmd.Parameters.AddWithValue("@judgeID", DBNull.Value);
-                cmd.Parameters.AddWithValue("@selectedCompetitionID", competition.CompetitionID);
+            cmd.Parameters.AddWithValue("@selectedCompetitionID", competition.CompetitionID);
             //Open a database connection
             conn.Open();
             //ExecuteNonQuery is used for UPDATE and DELETE
@@ -301,8 +330,8 @@ namespace WebApplication.DAL
             //to delete a staff record specified by a Staff ID
             SqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = @"DELETE FROM Competition
-                                WHERE CompetitionID = @selectCompetitionID";
-            cmd.Parameters.AddWithValue("@selectCompetitionID", competitionId);
+                                WHERE CompetitionID = @selectedCompetitionID";
+            cmd.Parameters.AddWithValue("@selectedCompetitionID", competitionId);
             //Open a database connection
             conn.Open();
             int rowAffected = 0;
@@ -310,10 +339,10 @@ namespace WebApplication.DAL
             rowAffected += cmd.ExecuteNonQuery();
             //Close database connection
             conn.Close();
-             //Return number of row of staff record updated or deleted
+            //Return number of row of staff record updated or deleted
             return rowAffected;
         }
-        
+
         public List<CompetitionSubmission> Rankings(List<string> competitornameList, int competitionId)
         {
             //Create a SqlCommand object from connection object
@@ -366,7 +395,7 @@ namespace WebApplication.DAL
 
             return competitorSubmissionList;
         }
-        public List<CompetitionViewModel> GetAssignedCompetition(List<string> areaofinterestnameList,int judgeID)
+        public List<CompetitionViewModel> GetAssignedCompetition(List<string> areaofinterestnameList, int judgeID)
         {
             //Create a SqlCommand object from connection object
             SqlCommand cmd = conn.CreateCommand();
@@ -390,7 +419,7 @@ namespace WebApplication.DAL
                     new CompetitionViewModel
                     {
                         CompetitionID = reader.GetInt32(0),         //0: 1st column
-                        AreaInterest = areaofinterestnameList[reader.GetInt32(1)],
+                        Name = areaofinterestnameList[reader.GetInt32(1) - 1],
                         CompetitionName = !reader.IsDBNull(2) ? reader.GetString(2) : null,      //2: 3rd column
                         StartDate = !reader.IsDBNull(3) ? reader.GetDateTime(3) : (DateTime?)null,         //3: 4th column
                         EndDate = !reader.IsDBNull(4) ? reader.GetDateTime(4) : (DateTime?)null,           //4: 5th column
@@ -403,6 +432,28 @@ namespace WebApplication.DAL
             conn.Close();
 
             return competitionList;
+        }
+        // To check if competitions have participants
+        public bool CheckIfCompetitionHasParticipants(int? id)
+        {
+            //Create a SqlCommand object from connection object
+            SqlCommand cmd = conn.CreateCommand();
+            //Specify the SELECT SQL statement
+            cmd.CommandText = @"SELECT COUNT(*) FROM CompetitionSubmission WHERE CompetitionID = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+            //Open a database connection
+            conn.Open();
+            //Execute the SELECT SQL and count the number of records
+            int count = (int)cmd.ExecuteScalar();
+            //Close the database connection
+            conn.Close();
+            // If there are existing participants, set to true
+            if (count > 0)
+            {
+                return true;
+            }
+            // Else set to false
+            return false;
         }
     }
 }

@@ -8,6 +8,9 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApplication.DAL;
 using WebApplication.Models;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace WebApplication.Controllers
 {
@@ -19,10 +22,12 @@ namespace WebApplication.Controllers
         // GET: CommentController
         public ActionResult ViewComment(int id)
         {
+            // Get all comments in database
             List<Comment> commentList = commentContext.GetAllComment(id);
+            // If there's no comment record in database, go to "ViewNoRecords" method
             if (commentList.Count() == 0)
             {
-                return RedirectToAction("ViewNoRecords", new { id = id});
+                return RedirectToAction("ViewNoRecords", new { id = id });
             }
             else
             {
@@ -32,6 +37,7 @@ namespace WebApplication.Controllers
 
         public ActionResult ViewCompetition()
         {
+            // Get all competitions in database
             List<CompetitionViewModel> competitionList =
                 competitionContext.GetAllCompetition(competitionContext.GetAreaOfInterest());
             return View(competitionList);
@@ -45,6 +51,8 @@ namespace WebApplication.Controllers
 
         public ActionResult ViewNoRecords(int id)
         {
+            // Pass comment's competitionID in view so that "Back to List" will redirect user to the
+            // correct comment page
             Comment comment = new Comment
             {
                 CompetitionID = id,
@@ -55,6 +63,8 @@ namespace WebApplication.Controllers
         // GET: CommentController/Create
         public ActionResult Create(int id)
         {
+            // Pass comment's competitionID in view so that "Back to List" will redirect user to the
+            // correct comment page
             Comment comment = new Comment
             {
                 CompetitionID = id,
@@ -72,7 +82,7 @@ namespace WebApplication.Controllers
                 //Add comment record to database
                 comment.CommentID = commentContext.Add(comment, id);
                 //Redirect user to Comment/ViewComment
-                return RedirectToAction("ViewComment", new { id = id});
+                return RedirectToAction("ViewComment", new { id = id });
             }
             else
             {

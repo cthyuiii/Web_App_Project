@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApplication.DAL;
 using WebApplication.Models;
 using System.IO;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace WebApplication.Controllers
 {
@@ -27,6 +29,7 @@ namespace WebApplication.Controllers
         public CompetitorController()
         {
             int i = 1;
+            // Populating salutation dropdown list
             foreach (string salut in salutList)
             {
                 salutDropDownList.Add(
@@ -50,34 +53,31 @@ namespace WebApplication.Controllers
             return View();
         }
 
-        // GET: Competitor/Create
-        public ActionResult Create()
-        {
-            if ((HttpContext.Session.GetString("Role") == null) ||
-                (HttpContext.Session.GetString("Role") != "Competitor"))
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            ViewData["Salutations"] = salutDropDownList;
-            return View();
-        }
-
         // GET: Competitor/ViewCompetitionCriteria/5
         public ActionResult ViewCompetitionCriteria(int? id)
         {
+            // If current user's role is not Competitor, redirect to home/index action
             if ((HttpContext.Session.GetString("Role") == null) ||
                 (HttpContext.Session.GetString("Role") != "Competitor"))
             {
                 return RedirectToAction("Index", "Home");
             }
+
+            // Getting list of all competitions
+            // Stored as Competition View Model to display competition's area of interest name
             List<CompetitionViewModel> competitionList = competitionContext.GetAllCompetition(
                 competitionContext.GetAreaOfInterest());
+
             CompetitionCriteriaViewModel competitionCriteriaVM = new CompetitionCriteriaViewModel();
+
+            // Setting competition criteria view model's competition list 
             competitionCriteriaVM.competitionList = competitionList;
 
             if (id != null)
             {
+                // Selected competition no ViewData used to highlight row of selected competition in the table
                 ViewData["selectedCompetitionNo"] = id.Value;
+
                 // Get list of criteria for the competition
                 competitionCriteriaVM.criteriaList = criteriaContext.GetCompetitionCriteria(id.Value);
             }
@@ -85,12 +85,14 @@ namespace WebApplication.Controllers
             {
                 ViewData["selectedCompetitionNo"] = "";
             }
+
             return View(competitionCriteriaVM);
         }
 
         // GET: CompetitorController/JoinCompetition/5
         public ActionResult JoinCompetition(int? competitionId)
         {
+            // If current user's role is not Competitor, redirect to home/index action
             if ((HttpContext.Session.GetString("Role") == null) ||
                 (HttpContext.Session.GetString("Role") != "Competitor"))
             {
@@ -101,22 +103,36 @@ namespace WebApplication.Controllers
                 //Return to listing page, not allowed to edit
                 return RedirectToAction("ViewCompetitionCriteria");
             }
+
+            // Getting details of selected competition 
+            // Selected competition's Id is passed from ViewCompetitionCritiera view
             Competition competition = competitionContext.GetDetails(competitionId.Value);
-            TempData["CompetitionStartDate"] = competition.StartDate;
+
+            // Difference between current date time and competition start date stored as TimeSpan
             TimeSpan difference = (TimeSpan)(competition.StartDate - DateTime.Now);
+
+            // Competitor's Id retrieved from session state which was set when a user first logs in
             int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
+
+            // Getting the competitor's Id who has already joined the competition
             int competitorIdFromRecord = competitionSubContext.IsCompetitorInCompetition((int)competitionId, competitorId).CompetitorID;
+
+            // Setting default state of join competition button using ViewData
             ViewData["ButtonState"] = "<input type='submit' value='Join Competition' class='myButton' />";
+
+            // If competition is starting in less than 3 days
             if (difference.Days >= 0 && difference.Days < 3)
             {
                 TempData["ErrorMessage"] = "Sorry, you are not allowed to join this competition as it is starting in less than 3 days.";
                 ViewData["ButtonState"] = "";
             }
-            else if (difference.Days < 0) 
+            // If competition has already started
+            else if (difference.Days < 0)
             {
                 TempData["ErrorMessage"] = "Sorry, you are not allowed to join this competition as it has already started.";
                 ViewData["ButtonState"] = "";
             }
+            // If competitor has already joined the selected competition
             if (competitorId == competitorIdFromRecord)
             {
                 TempData["ErrorMessage"] = "You have already joined this competition.";
@@ -127,6 +143,7 @@ namespace WebApplication.Controllers
                 //Return to listing page, not allowed to edit
                 return RedirectToAction("ViewCompetitionCriteria");
             }
+
             return View(competition);
         }
 
@@ -137,12 +154,14 @@ namespace WebApplication.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Competitor's Id retrieved from session state which was set when a user first logs in
                 int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
+
                 // Add competition submission record to database
                 competitionSubContext.Add(competition.CompetitionID, competitorId);
                 TempData["SuccessfullyJoinedMsg"] = "You have successfully joined this competition";
                 return View(competition);
-        
+
             }
             else
             {
@@ -152,42 +171,25 @@ namespace WebApplication.Controllers
             }
         }
 
-        // POST: Competitor/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(Competitor competitor)
-        {
-            ViewData["Salutations"] = salutDropDownList;
-            if (ModelState.IsValid)
-            {
-                //Add competitor record to database
-                competitor.CompetitorID = competitorContext.Add(competitor);
-                TempData["SuccessMessage"] = "Competitor Profile has been successfully created!";
-                //Redirect user to Competitor/Create view
-                return RedirectToAction("Create");
-            }
-            else
-            {             
-                //Input validation fails, return to the Create view
-                //to display error message
-                return View(competitor);
-            }
-
-        }
-
         public ActionResult ViewJoinedCompetitions()
         {
+            // If current user's role is not Competitor, redirect to home/index action
             if ((HttpContext.Session.GetString("Role") == null) ||
                 (HttpContext.Session.GetString("Role") != "Competitor"))
             {
                 return RedirectToAction("Index", "Home");
             }
+
+            // Competitor's Id retrieved from session state which was set when a user first logs in
             int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
+
             List<CompetitionViewModel> competitionJoinedList = new List<CompetitionViewModel>();
+            // Getting list of competition ids of competitions joined by competitor
             List<int> competitionIdJoinedList = competitionSubContext.competitionsJoinedByCompetitor(competitorId);
 
             foreach (int competitionId in competitionIdJoinedList)
             {
+                // Add all joined competitions into competition view model list               
                 competitionJoinedList.Add(competitionContext.GetJoinedCompetition(competitionContext.GetAreaInterestJoined(competitionId), competitionId));
             }
 
@@ -196,23 +198,39 @@ namespace WebApplication.Controllers
 
         public ActionResult SubmitWork(int competitionId)
         {
-            // Stop accessing the action if not logged in
-            // or account not in the "Competitor" role
+            // If current user's role is not Competitor, redirect to home/index action
             if ((HttpContext.Session.GetString("Role") == null) ||
             (HttpContext.Session.GetString("Role") != "Competitor"))
             {
                 return RedirectToAction("Index", "Home");
             }
+
+            // Competitor's Id retrieved from session state which was set when a user first logs in
             int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
+
+            // Getting details of competition submission record
             CompetitionSubmission compSub = competitionSubContext.GetDetails(competitionId, competitorId);
+            // Mapping competition submission to competition submission view model
             CompetitionSubmissionViewModel compSubVM = MapToCompSubVM(compSub);
+            // Getting competition details of selected competition
             Competition competition = competitionContext.GetDetails(competitionId);
+
+            // Setting default state of upload button using ViewData
             ViewData["UploadWorkBtn"] = "<input type='submit' value='Upload' class='myButton' />";
-            if (DateTime.Now < competition.StartDate || DateTime.Now > competition.EndDate)
+
+            // If Competition has not started
+            if (DateTime.Now < competition.StartDate)
             {
-                TempData["ErrorSubmitWorkMessage"] = "Sorry, you are not allowed to submit your competition work as the competition has not started or has already ended.";
+                TempData["ErrorSubmitWorkMessage"] = "Sorry, you are not allowed to submit your competition work as the competition has not started.";
                 ViewData["UploadWorkBtn"] = "";
             }
+            // If competition has already ended
+            else if (DateTime.Now > competition.EndDate)
+            {
+                TempData["ErrorSubmitWorkMessage"] = "Sorry, you are not allowed to submit your competition work as the competition has already ended.";
+                ViewData["UploadWorkBtn"] = "";
+            }
+
             return View(compSubVM);
         }
 
@@ -220,6 +238,7 @@ namespace WebApplication.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SubmitWork(CompetitionSubmissionViewModel compSubVM)
         {
+            // If uploaded file is not null and has length larger than 0
             if (compSubVM.filetoUpload != null &&
             compSubVM.filetoUpload.Length > 0)
             {
@@ -232,40 +251,129 @@ namespace WebApplication.Controllers
                     string uploadedFile = "File_" + compSubVM.CompetitorID + "_" + compSubVM.CompetitionID + fileExt;
                     // Get the complete path to the images folder in server
                     string savePath = Path.Combine(
-                     Directory.GetCurrentDirectory(),
-                     "wwwroot\\CompetitionWork", uploadedFile);
+                        Directory.GetCurrentDirectory(),
+                        "wwwroot\\CompetitionWork", uploadedFile);
                     // Upload the file to server
                     using (var fileSteam = new FileStream(
-                     savePath, FileMode.Create))
+                        savePath, FileMode.Create))
                     {
                         await compSubVM.filetoUpload.CopyToAsync(fileSteam);
                     }
+                    // Setting name of file submitted
                     compSubVM.FileSubmitted = uploadedFile;
+                    // Setting date time of file upload
                     compSubVM.DateTimeFileUpload = DateTime.Now;
+                    // Updating competition submission record with name of file submitted and date time of file upload
                     competitionSubContext.UpdateFileNameAndDT(compSubVM);
                     TempData["Message"] = "File uploaded successfully.";
                 }
                 catch (IOException)
                 {
                     //File IO error, could be due to access rights denied
-                    ViewData["Message"] = "File uploading fail!";
+                    TempData["Message"] = "File uploading fail!";
                 }
                 catch (Exception ex) //Other type of error
                 {
-                    ViewData["Message"] = ex.Message;
+                    TempData["Message"] = ex.Message;
                 }
             }
+
+            return View(compSubVM);
+        }
+
+        public ActionResult ViewScores(int competitionId)
+        {
+            // If current user's role is not Competitor, redirect to home/index action
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Competitor"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            // Competitor's Id retrieved from session state which was set when a user first logs in
+            int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
+
+            // Getting list of competition scores of competitor's joined competition 
+            List<CompetitionScore> compScoreList = compScoreContext.GetScoresOfJoinedComp(competitionId, competitorId);
+            // Mapping List of competition scores to list of criteria score view model  
+            List<CriteriaScoreViewModel> critScoreList = MapToCritScoreVMList(compScoreList);
+
+            // ViewData for competition name to display in view
+            ViewData["CompetitionName"] = competitionContext.GetDetails(competitionId).CompetitionName;
+            // ViewData for competition id to pass to view to be used as query string 
+            ViewData["CompetitionId"] = competitionId;
+
+            return View(critScoreList);
+        }
+
+        public List<CriteriaScoreViewModel> MapToCritScoreVMList(List<CompetitionScore> compScoreList)
+        {
+            List<CriteriaScoreViewModel> critScoreList = new List<CriteriaScoreViewModel>();
+
+            foreach (CompetitionScore compScore in compScoreList)
+            {
+                // Adding criteria name and scores for each criteria to list of criteria scores
+                critScoreList.Add(
+                new CriteriaScoreViewModel
+                {
+                    // Getting criteria name from database using CriteriaDAL
+                    CriteriaName = criteriaContext.GetCritName(compScore.CriteriaID),
+                    // Getting competition score from list of competiton scores
+                    Score = compScore.Score
+                }
+                );
+            }
+
+            return critScoreList;
+        }
+
+        public ActionResult SubmitAppeal(int competitionId)
+        {
+            // If current user's role is not Competitor, redirect to home/index action
+            if ((HttpContext.Session.GetString("Role") == null) ||
+                (HttpContext.Session.GetString("Role") != "Competitor"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            // Competitor's Id retrieved from session state which was set when a user first logs in
+            int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
+
+            // Getting details of competition submission
+            CompetitionSubmission compSub = competitionSubContext.GetDetails(competitionId, competitorId);
+            // Mapping competition submission to competition submission view model
+            CompetitionSubmissionViewModel compSubVM = MapToCompSubVM(compSub);
+            // Getting competition details
+            Competition competition = competitionContext.GetDetails(competitionId);
+
+            // Setting default state of submit appeal button
+            ViewData["SubmitAppealBtn"] = "<input type='submit' value='Submit Appeal' class='myButton' />";
+
+            // If current date has passed competition result release date 
+            if (DateTime.Now >= competition.ResultReleasedDate)
+            {
+                TempData["ErrorAppealMessage"] = "Sorry, you are can only submit an appeal before the date of results released.";
+                ViewData["SubmitAppealBtn"] = "";
+            }
+            // If competition submission record has existing appeal
+            if (compSubVM.Appeal != null)
+            {
+                TempData["ErrorAppealMessage"] = "Sorry, you are only allowed to submit ONE appeal.";
+                ViewData["SubmitAppealBtn"] = "";
+            }
+
             return View(compSubVM);
         }
 
         public CompetitionSubmissionViewModel MapToCompSubVM(CompetitionSubmission compSub)
         {
             string competitionName = "";
+            // Getting list of all competitions
             List<Competition> competitionList = competitionContext.GetCompetitions();
             foreach (Competition competition in competitionList)
             {
+                // If competition's Id matches competition submission's competition Id
                 if (competition.CompetitionID == compSub.CompetitionID)
                 {
+                    // Set name of competition
                     competitionName = competition.CompetitionName;
                     //Exit the foreach loop once the name is found
                     break;
@@ -286,73 +394,16 @@ namespace WebApplication.Controllers
             return compSubVM;
         }
 
-        public ActionResult ViewScores(int competitionId)
-        {
-            if ((HttpContext.Session.GetString("Role") == null) ||
-                (HttpContext.Session.GetString("Role") != "Competitor"))
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
-            List<CompetitionScore> compScoreList = compScoreContext.GetScoresOfJoinedComp(competitionId, competitorId);
-            List<CriteriaScoreViewModel> critScoreList = MapToCritScoreVMList(compScoreList);
-            ViewData["CompetitionName"] = competitionContext.GetDetails(competitionId).CompetitionName;
-            ViewData["CompetitionId"] = competitionId;
-
-            return View(critScoreList);
-        }
-
-        public List<CriteriaScoreViewModel> MapToCritScoreVMList(List<CompetitionScore> compScoreList)
-        {
-            List<CriteriaScoreViewModel> critScoreList = new List<CriteriaScoreViewModel>();
-
-            foreach (CompetitionScore compScore in compScoreList)
-            {
-                critScoreList.Add(
-                new CriteriaScoreViewModel
-                {
-                    CriteriaName = criteriaContext.GetCritName(compScore.CriteriaID),
-                    Score = compScore.Score
-                }
-                );                                    
-            }
-            return critScoreList;
-        }
-
-        public ActionResult SubmitAppeal(int competitionId)
-        {
-            if ((HttpContext.Session.GetString("Role") == null) ||
-                (HttpContext.Session.GetString("Role") != "Competitor"))
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
-            CompetitionSubmission compSub = competitionSubContext.GetDetails(competitionId, competitorId);
-            CompetitionSubmissionViewModel compSubVM = MapToCompSubVM(compSub);
-            Competition competition = competitionContext.GetDetails(competitionId);
-            ViewData["SubmitAppealBtn"] = "<input type='submit' value='Submit Appeal' class='myButton' />";
-            if (DateTime.Now >= competition.ResultReleasedDate)
-            {
-                TempData["ErrorAppealMessage"] = "Sorry, you are can only submit an appeal before the date of results released.";
-                ViewData["SubmitAppealBtn"] = "";
-            }
-            if (compSubVM.Appeal != null)
-            {
-                TempData["ErrorAppealMessage"] = "Sorry, you are only allowed to submit ONE appeal.";
-                ViewData["SubmitAppealBtn"] = "";
-            }
-
-            return View(compSubVM);
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult SubmitAppeal(CompetitionSubmissionViewModel compSubVM)
         {
             if (ModelState.IsValid)
             {
-                //Add appeal record to database
+                // Competitor's Id retrieved from session state which was set when a user first logs in
                 int competitorId = (int)HttpContext.Session.GetInt32("competitorId");
+
+                //Add appeal record to database
                 compSubVM.CompetitorID = competitorId;
                 competitionSubContext.UpdateAppealRecord(compSubVM);
                 TempData["Message"] = "Appeal submitted successfully.";
@@ -380,7 +431,7 @@ namespace WebApplication.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index)); 
+                return RedirectToAction(nameof(Index));
             }
             catch
             {

@@ -1,4 +1,4 @@
-﻿@model WebApplication.Models.CompetitionViewModel
+﻿@model WebApplication.Models.Competition
 
 @{
     ViewData["Title"] = "Delete";
@@ -27,13 +27,14 @@
             </div>
         </div>
         <div class="form-group row">
-            <div class="col-sm-9 offset-sm-3">
-                <input type="submit" value="Delete"
-                       class="btn btn-primary" />
+            <div class="form-group">
+                @Html.Raw(ViewData["ButtonState"])
             </div>
         </div>
+        <span style="color:green;">@TempData["SuccessfullyDeletedMsg"]</span>
+        <span style="color:red;">@TempData["ErrorMessage"]</span>
         <div>
-            <a asp-action="Index">Back to List</a>
+            <a asp-action="ViewCompetitions">Back to List</a>
         </div>
     </fieldset>
 </form>

@@ -11,11 +11,11 @@ namespace WebApplication.Models
         [Display(Name = "ID")]
         public int CompetitionID { get; set; }
 
-        [Display(Name = "JudgeID")]
-        public int JudgeID { get; set; }
+        [Display(Name = "Area of Interest ID")]
+        public int AreaInterestID { get; set; }
 
         [Display(Name = "Area of Interest")]
-        public string AreaInterest { get; set; }
+        public string Name { get; set; }
 
         [Display(Name = "Competition Name")]
         [StringLength(255, ErrorMessage = "Name cannot exceed 255 characters!")]
@@ -35,8 +35,7 @@ namespace WebApplication.Models
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime? ResultReleasedDate { get; set; }
-
-        [Display(Name = "Judges")]
-        public string JudgeName { get; set;}
+        [Display(Name = "Judge(s)")]
+        public List<Judge> competitionJudgeList { get; set; }
     }
 }

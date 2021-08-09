@@ -10,7 +10,7 @@ namespace WebApplication.Models
     {
         [Display(Name = "ID")]
         public int CompetitionID { get; set; }
-        [Display(Name ="Judge ID")]
+        [Display(Name = "Judge ID")]
         public int JudgeID { get; set; }
     }
 }

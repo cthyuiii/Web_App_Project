@@ -45,7 +45,7 @@ namespace WebApplication.DAL
             //Execute the SELECT SQL through a DataReader
             SqlDataReader reader = cmd.ExecuteReader();
 
-            //Read all records until the end, save data into a competitor list
+            //Read all records until the end, save data into a comment list
             List<Comment> commentList = new List<Comment>();
 
             while (reader.Read())
@@ -73,14 +73,13 @@ namespace WebApplication.DAL
             //Create a SqlCommand object from connection object
             SqlCommand cmd = conn.CreateCommand();
 
-            //Specify an INSERT SQL statement which will
-            //return the auto-generated StaffID after insertion
+            //Specify an INSERT SQL statement
             cmd.CommandText = @"INSERT INTO Comment (CompetitionID, Description, 
                                 DateTimePosted) OUTPUT INSERTED.CommentID VALUES(@competitionID, 
                                 @description, @datetimeposted)";
 
             //Define the parameters used in SQL statement, value for each parameter
-            //is retrieved from respective class's property.
+            //is retrieved from controller.
             cmd.Parameters.AddWithValue("@competitionID", competitionID);
             cmd.Parameters.AddWithValue("@description", comment.Description);
             cmd.Parameters.AddWithValue("@datetimeposted", DateTime.Now);
@@ -89,7 +88,6 @@ namespace WebApplication.DAL
             conn.Open();
             //Execute Scalar is used to retrieve the auto-generated
             //CommentID after executing the INSERT SQL statement
-            Debug.WriteLine(competitionID);
             comment.CommentID = (int)cmd.ExecuteScalar();
 
             //A connection should be closed after operations.

@@ -4,7 +4,7 @@
     ViewData["Title"] = "View Competition Criteria";
 }
 
-<h4 class="PageTitle">View Competition Criteria</h4>
+<h4 class="PageTitle">Join a Competition</h4>
 
 <!-- Display a list of Competitions -->
 <div class="table-responsive">
@@ -33,7 +33,7 @@
                 <tr @Html.Raw(selectedRow)>
                     <td>@item.CompetitionID.ToString()</td>
                     <td>@item.CompetitionName</td>
-                    <td>@item.AreaInterest</td>
+                    <td>@item.Name</td>
                     <td>@item.StartDate</td>
                     <td>@item.EndDate</td>
                     <td>@item.ResultReleasedDate</td>

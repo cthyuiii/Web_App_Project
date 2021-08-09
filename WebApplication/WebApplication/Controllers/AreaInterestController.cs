@@ -16,6 +16,8 @@ namespace WebApplication.Controllers
         private CompetitionDAL competitionContext = new CompetitionDAL();
         private CompetitionSubmissionDAL competitionSubContext = new CompetitionSubmissionDAL();
 
+        // BASIC FEATURES: Create Area of Interest, Delete Area of Interest
+
         // GET: AreaInterest
         public ActionResult Index(int? id)
         {
@@ -51,6 +53,7 @@ namespace WebApplication.Controllers
         // GET: AreaInterestController/Create
         public ActionResult Create()
         {
+            // If not logged in as admin, redrirect back to home
             if ((HttpContext.Session.GetString("Role") == null) ||
                 (HttpContext.Session.GetString("Role") != "Admin"))
             {
@@ -65,13 +68,13 @@ namespace WebApplication.Controllers
         public ActionResult Create(AreaInterest areaInterest, IFormCollection collection)
         {
             // To validate Area of interest when creating
-            try
+            if (ModelState.IsValid)
             {
                 areaInterest.AreaInterestID = areainterestContext.Add(areaInterest);
                 TempData["SuccessMessage"] = "Area of Interest has been successfully created!";
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Create));
             }
-            catch
+            else
             {
                 return View();
             }
@@ -80,46 +83,51 @@ namespace WebApplication.Controllers
         // GET: AreaInterestController/Delete/5
         public ActionResult Delete(int? id)
         {
-             if ((HttpContext.Session.GetString("Role") == null) ||
+            // Button ViewData
+            ViewData["ButtonState"] = "<input type='submit' value='Delete' class='myButton' />";
+            // If not logged in as admin, redrirect back to home
+            if ((HttpContext.Session.GetString("Role") == null) ||
                 (HttpContext.Session.GetString("Role") != "Admin"))
             {
                 return RedirectToAction("Index", "Home");
             }
             // If page id doesn't exist or is already deleted, return back to home page.
-            if (id == null) 
+            if (id == null)
             {
                 //Return to listing page, not allowed to edit
                 return RedirectToAction("Index");
             }
             // If area of interest doesn't exist return back to home page.
             AreaInterest areaInterest = areainterestContext.GetDetails(id.Value);
-            if (areaInterest == null) 
+            if (areaInterest == null)
             {
                 //Return to listing page, not allowed to edit
                 return RedirectToAction("Index");
             }
             // If selected area of interest already has a past competition record, deleting is prevented.
-            int? competitionId = HttpContext.Session.GetInt32("competitionId");
-            if(competitionId == null)
-            {
-                TempData["ErrorMessage"] = "Unable to delete Area Of Interest as there is already an existing competition record";
-                ViewData["ButtonState"] = "";
-            }
             return View(areaInterest);
         }
 
         // POST: AreaInterestController/Delete/2
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(AreaInterest areaInterest, IFormCollection collection)
+        public ActionResult Delete(AreaInterest areaInterest, IFormCollection collection, int? id)
         {
-            try
+            // If theres an existing participant for competition related to this area of interest, it will prevent it from deleting
+            bool exists = competitionContext.CheckIfCompetitionHasParticipants(id);
+            if (exists == true)
+            {
+                TempData["ErrorMessage"] = "Unable to delete Area Of Interest as there is already an existing competition record!";
+                ViewData["ButtonState"] = "";
+            }
+            // To validate Area of interest when deleting
+            if (ModelState.IsValid)
             {
                 areainterestContext.Delete(areaInterest.AreaInterestID);
                 TempData["SuccessfullyDeletedMsg"] = "Area of Interest has been deleted.";
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Delete));
             }
-            catch
+            else
             {
                 return View();
             }

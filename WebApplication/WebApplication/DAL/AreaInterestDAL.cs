@@ -58,6 +58,7 @@ namespace WebApplication.DAL
 
             return AreaInterestList;
         }
+
         public int Add(AreaInterest areaInterest)
         {
             //Create a SqlCommand object from connection object
@@ -80,7 +81,7 @@ namespace WebApplication.DAL
             //Return id when no error occurs.
             return areaInterest.AreaInterestID;
         }
-        public AreaInterest GetDetails(int areaInterestID)
+        public AreaInterest GetDetails(int areainterestid)
         {
             AreaInterest areaInterest = new AreaInterest();
 
@@ -88,13 +89,13 @@ namespace WebApplication.DAL
             SqlCommand cmd = conn.CreateCommand();
 
             //Specify the SELECT SQL statement that
-            //retrieves all attributes of a competition record.
+            //retrieves all attributes of a area interest record.
             cmd.CommandText = @"SELECT * FROM AreaInterest
                         WHERE AreaInterestID = @selectedAreaInterestID";
 
             //Define the parameter used in SQL statement, value for the
-            //parameter is retrieved from the method parameter “competitionId”.
-            cmd.Parameters.AddWithValue("@selectedAreaInterestID", areaInterestID);
+            //parameter is retrieved from the method parameter “areaInterestID”.
+            cmd.Parameters.AddWithValue("@selectedAreaInterestID", areainterestid);
 
             //Open a database connection
             conn.Open();
@@ -105,8 +106,8 @@ namespace WebApplication.DAL
                 //Read the record from database
                 while (reader.Read())
                 {
-                    // Fill competition object with values from the data reader
-                    areaInterest.AreaInterestID = areaInterestID;
+                    // Fill Area of Interest object with values from the data reader
+                    areaInterest.AreaInterestID = areainterestid;
                     areaInterest.Name = reader.GetString(1);
                 }
             }
@@ -116,6 +117,42 @@ namespace WebApplication.DAL
             conn.Close();
 
             return areaInterest;
+        }
+
+        public string GetAreaInterestName(int areainterestid)
+        {
+            AreaInterest areaInterest = new AreaInterest();
+
+            //Create a SqlCommand object from connection object
+            SqlCommand cmd = conn.CreateCommand();
+
+            //Specify the SELECT SQL statement that
+            //retrieves all attributes of a area interest record.
+            cmd.CommandText = @"SELECT Name FROM AreaInterest
+                        WHERE AreaInterestID = @selectedAreaInterestID";
+
+            //Define the parameter used in SQL statement, value for the
+            //parameter is retrieved from the method parameter “areaInterestID”.
+            cmd.Parameters.AddWithValue("@selectedAreaInterestID", areainterestid);
+
+            //Open a database connection
+            conn.Open();
+            //Execute SELCT SQL through a DataReader
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                //Read the record from database
+                while (reader.Read())
+                {
+                    areaInterest.Name = reader.GetString(0);
+                }
+            }
+            //Close data reader
+            reader.Close();
+            //Close database connection
+            conn.Close();
+
+            return areaInterest.Name;
         }
 
         public int Delete(int areaInterestId)
@@ -133,7 +170,7 @@ namespace WebApplication.DAL
             rowAffected += cmd.ExecuteNonQuery();
             //Close database connection
             conn.Close();
-             //Return number of row of staff record updated or deleted
+            //Return number of row of staff record updated or deleted
             return rowAffected;
         }
 
@@ -159,15 +196,15 @@ namespace WebApplication.DAL
                 {
                     CompetitionID = reader.GetInt32(0), //0: 1st column
                     AreaInterestID = reader.GetInt32(1), //1: 2nd column
-                                 //Get the first character of a string
+                                                         //Get the first character of a string
                     CompetitionName = reader.GetString(2), //2: 3rd column
-                    StartDate = !reader.IsDBNull(3) ? 
+                    StartDate = !reader.IsDBNull(3) ?
                                 reader.GetDateTime(3) : (DateTime?)null, //3: 4th column
                     EndDate = !reader.IsDBNull(3) ?
                             reader.GetDateTime(3) : (DateTime?)null, //5: 6th column
                     ResultReleasedDate = !reader.IsDBNull(3) ?
                             reader.GetDateTime(3) : (DateTime?)null,
-            }
+                }
                 );
             }
             //Close DataReader
@@ -176,5 +213,5 @@ namespace WebApplication.DAL
             conn.Close();
             return competitionList;
         }
-    }  
+    }
 }

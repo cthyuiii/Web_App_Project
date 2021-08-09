@@ -18,8 +18,8 @@ namespace WebApplication.Models
 
         [Display(Name = "Salutation")]
         public string Salutation { get; set; }
-        
-        [Display(Name = "E-mail Address")]
+
+        [Display(Name = "Email")]
         [EmailAddress]
         // Custom Validation Attribute for checking email address exists
         [ValidateCompetitorEmail]

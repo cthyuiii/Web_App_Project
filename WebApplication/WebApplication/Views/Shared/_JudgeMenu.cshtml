@@ -16,16 +16,20 @@
                         <a class="nav-link" asp-controller="Judge" asp-action="Index">View Judge</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Judge" asp-action="Create">Create Judge</a>
+                        <a class="nav-link" asp-controller="Judge" asp-action="ViewProfile">View Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Criteria" asp-action="ViewCompetitionCriteria" >Create Criteria</a>
+                        <a class="nav-link" asp-controller="Criteria" asp-action="ViewCompetitionCriteria">Create Criteria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="JudgeViewSubmissions" asp-action="ViewCompetitions">View Submissions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="JudgeViewRankings" asp-action="ViewCompetitions">View Ranking</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Logging out-->
+                        <a class="nav-link" asp-controller="Home" asp-action="LogOut">Log Out</a>
                     </li>
                 </ul>
             </div>

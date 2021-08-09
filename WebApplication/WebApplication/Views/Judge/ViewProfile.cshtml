@@ -1,0 +1,51 @@
+﻿@model WebApplication.Models.Judge
+
+@{
+    ViewData["Title"] = "ViewProfile";
+}
+
+<h1>My Profile</h1>
+
+<hr />
+<form>
+    <fieldset class="FormContent">
+        <legend>View Profile</legend>
+        <div class="form-group row">
+            <label asp-for="JudgeName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="JudgeName" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Salutation"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="Salutation" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="AreaInterestName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="AreaInterestName" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="EmailAddr"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="EmailAddr" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+    </fieldset>
+    <a asp-action="Update" asp-controller="Judge">Update Profile</a>&nbsp&nbsp<a asp-action="Delete" asp-controller="Judge">Delete Profile</a>
+</form>
+<div>
+    <a asp-action="Index"
+       asp-controller="Judge">Back To List</a>
+</div>

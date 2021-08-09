@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication.Models
 {
-    public class JudgeViewSubmissions 
+    public class JudgeViewSubmissions
     {
         [Display(Name = "Competition ID")]
         public int CompetitionID { get; set; }
@@ -28,8 +28,8 @@ namespace WebApplication.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime? EndDate { get; set; }
         [Display(Name = "Score")]
-        [Required(ErrorMessage ="Please Enter A Score")]
-        [Range(0,10,ErrorMessage ="Score must be between 0 and 10")]
+        [Required(ErrorMessage = "Please Enter A Score")]
+        [Range(0, 10, ErrorMessage = "Score must be between 0 and 10")]
         public int Score { get; set; }
         public string FilePath { get; set; }
         [Display(Name = "Result Released Date")]
@@ -45,7 +45,9 @@ namespace WebApplication.Models
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime? DateTimeLastEdit { get; set; }
+        public int TWeightage { get; set; }
         public List<Criteria> criteriaList { get; set; }
+        public List<Criteria> critCheckList { get; set; }
         public List<JudgeViewSubmissions> scoreList { get; set; }
         public List<CompetitionCompetitorViewModel> competitorList { get; set; }
         public List<JudgeViewSubmissions> competitionList { get; set; }
@@ -57,6 +59,7 @@ namespace WebApplication.Models
             criteriaList = new List<Criteria>();
             competitionList = new List<JudgeViewSubmissions>();
             VMCheckList = new List<JudgeViewSubmissions>();
+            critCheckList = new List<Criteria>();
         }
     }
 }

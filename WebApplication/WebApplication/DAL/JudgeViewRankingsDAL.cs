@@ -78,7 +78,7 @@ namespace WebApplication.DAL
             {
                 jvr.scoresList.Add(
                     new JudgeViewRankings
-                    {   
+                    {
                         CriteriaID = reader.GetInt32(0),
                         CompetitionID = competitionID,
                         CompetitorID = competitorID,
@@ -120,6 +120,38 @@ namespace WebApplication.DAL
             //Close the database connection
             conn.Close();
             return jvr.weightageList;
+        }
+        public List<JudgeViewRankings> GetCompetitorCount(int competitionId)
+        {
+            //Create a SqlCommand object from connection object
+            SqlCommand cmd = conn.CreateCommand();
+            //Specify the SELECT SQL statement
+            cmd.CommandText = @"SELECT CompetitorID
+                                FROM CompetitionSubmission
+                                WHERE CompetitionID = @selectedCompetitionID";
+            cmd.Parameters.AddWithValue("@selectedCompetitionID", competitionId);
+            //Open a database connection
+            conn.Open();
+            //Execute the SELECT SQL through a DataReader
+            SqlDataReader reader = cmd.ExecuteReader();
+            //Read all records until the end, save data into a staff list
+            List<JudgeViewRankings> competitorList = new List<JudgeViewRankings>();
+            while (reader.Read())
+            {
+                competitorList.Add(
+                    new JudgeViewRankings
+                    {
+                        // Fill Competitor object with values from the data reader
+                        CompetitorID = reader.GetInt32(0),    //0: 1st column
+                        CompetitionID = competitionId
+                    }
+                );
+            }
+            //Close DataReader
+            reader.Close();
+            //Close the database connection
+            conn.Close();
+            return competitorList;
         }
         public void Update(JudgeViewRankings jvr)
         {
