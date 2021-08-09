@@ -104,7 +104,20 @@ namespace WebApplication.Controllers
                 //Return to listing page, not allowed to edit
                 return RedirectToAction("Index");
             }
+            // If theres an existing participant for competition related to this area of interest, it will prevent it from deleting
+            bool exists = competitionContext.CheckIfCompetitionHasParticipants(id);
+            if (exists == true)
+            {
+                TempData["ErrorMessage"] = "Unable to delete Area Of Interest as there is already an existing competition record!";
+                ViewData["ButtonState"] = "";
+            }
             // If selected area of interest already has a past competition record, deleting is prevented.
+            bool competitionexists = competitionContext.CheckIfAOIhascompetition(id);
+            if (exists == true)
+            {
+                TempData["ErrorMessage"] = "Unable to delete Area Of Interest as there is already an existing competition!";
+                ViewData["ButtonState"] = "";
+            }
             return View(areaInterest);
         }
 
@@ -113,13 +126,6 @@ namespace WebApplication.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(AreaInterest areaInterest, IFormCollection collection, int? id)
         {
-            // If theres an existing participant for competition related to this area of interest, it will prevent it from deleting
-            bool exists = competitionContext.CheckIfCompetitionHasParticipants(id);
-            if (exists == true)
-            {
-                TempData["ErrorMessage"] = "Unable to delete Area Of Interest as there is already an existing competition record!";
-                ViewData["ButtonState"] = "";
-            }
             // To validate Area of interest when deleting
             if (ModelState.IsValid)
             {

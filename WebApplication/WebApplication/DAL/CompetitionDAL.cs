@@ -162,7 +162,7 @@ namespace WebApplication.DAL
             SqlCommand cmd = conn.CreateCommand();
             //Specify the SELECT SQL statement
             cmd.CommandText = @"SELECT * FROM Competition WHERE StartDate > @now ORDER BY CompetitionId";
-            cmd.Parameters.AddWithValue("@today", DateTime.Now);
+            cmd.Parameters.AddWithValue("@now", DateTime.Now);
             //Open a database connection
             conn.Open();
             //Execute the SELECT SQL through a DataReader
@@ -440,6 +440,28 @@ namespace WebApplication.DAL
             SqlCommand cmd = conn.CreateCommand();
             //Specify the SELECT SQL statement
             cmd.CommandText = @"SELECT COUNT(*) FROM CompetitionSubmission WHERE CompetitionID = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+            //Open a database connection
+            conn.Open();
+            //Execute the SELECT SQL and count the number of records
+            int count = (int)cmd.ExecuteScalar();
+            //Close the database connection
+            conn.Close();
+            // If there are existing participants, set to true
+            if (count > 0)
+            {
+                return true;
+            }
+            // Else set to false
+            return false;
+        }
+
+        public bool CheckIfAOIhascompetition(int? id)
+        {
+            //Create a SqlCommand object from connection object
+            SqlCommand cmd = conn.CreateCommand();
+            //Specify the SELECT SQL statement
+            cmd.CommandText = @"SELECT COUNT(*) FROM CompetitionS WHERE AreaInterestID = @id";
             cmd.Parameters.AddWithValue("@id", id);
             //Open a database connection
             conn.Open();

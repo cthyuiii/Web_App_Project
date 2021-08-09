@@ -4,11 +4,8 @@
     List<Competition> UpcomingCompetition = (List<Competition>)ViewData["UpcomingCompetition"];
 }
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-</script>
 
-@section Scripts {
+@section scripts {
     <script>
         // Definiing variables
         var model = @Html.Raw(Json.Serialize(Model));
@@ -163,24 +160,25 @@
                 @Html.Raw(TempData["JqueryViewJudges"])
             }
         });
+
     </script>
 }
 <body>
     <h2>Select Judges</h2>
     <div class="table-responsive">
-        <input type="submit" onclick="AssignToCompetition()" ;" />
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">
                 <tr>
-                    <th></th>
+                    <th><input type="submit" onclick="AssignToCompetition()" value="Assign to Competition" /></th>
                     <th>Salutation</th>
                     <th>Name</th>
                     <th>Area of Interest</th>
                     <th>Email Address</th>
                     <th>Competition Assigned</th>
+                    <th>Unassign Judge</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="judgeCheck">
                 @for (int i = 0; i < Model.Count(); i++)
                 {
                     string text = "";
@@ -190,7 +188,7 @@
                     }
                     if (Model.ElementAt(i).AssignedCompetition.Count() == 0)
                     {
-                        text = "Not Assigned";
+                        text = "-";
                     }
                     else
                     {
@@ -200,18 +198,20 @@
                         <td>
                             @if (Model.ElementAt(i).AssignedCompetition.Count() == 0)
                             {
-                                <input type="checkbox" class="form-control" name="@Model.ElementAt(i).JudgeID">
-                                <label class="control-label"></label>
+                                <input type="checkbox" class="form-control" name="@Model.ElementAt(i).JudgeID" id="@String.Format("judgeCheck", i)">
+                                <label class="control-label" for="@String.Format("judgeCheck", i)"></label>
+                                //<input type="checkbox" class="form-control" name="@Model.ElementAt(i).JudgeID">
+                                //<label class="control-label"></label>
                             }
                             else
                             {
-                                <input type="checkbox" class="form-control" disabled>
-                                <label class="control-label"></label>
+                                <input type="checkbox" class="form-control" name="@Model.ElementAt(i).JudgeID" id="@String.Format("judgeCheck", i)" disabled>
+                                <label class="control-label" for="@String.Format("judgeCheck", i)"></label>
                             }
                         </td>
                         <td><p>@Model.ElementAt(i).Salutation</p></td>
+                        <td><p>@Model.ElementAt(i).JudgeName</p></td>
                         <td><p>@Model.ElementAt(i).Name</p></td>
-                        <td><p>@Model.ElementAt(i).AreaInterestName</p></td>
                         <td><p>@Model.ElementAt(i).EmailAddr</p></td>
                         <td><p>@Html.Raw(text)</p></td>
                         <td>
@@ -221,10 +221,13 @@
                             }
                             else
                             {
-                                <input type='submit' value='Delete Competition' class='myButton'
-                                       onclick="UnassignCompetition('@Model.ElementAt(i).JudgeID',
-                                                                    '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionID',
-                                                                    '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionName')" />
+                                <button type="button" onclick="UnassignCompetition('@Model.ElementAt(i).JudgeID', '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionID', '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionName')">
+                                    Unassign<br />Competition
+                                </button>
+                                //<input type='submit' value='Delete Competition' class='myButton'
+                                //     onclick="UnassignCompetition('@Model.ElementAt(i).JudgeID',
+                                //                                '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionID',
+                                //                              '@Model.ElementAt(i).AssignedCompetition.ElementAt(0).CompetitionName')"/>
                             }
                         </td>
                     </tr>
@@ -232,37 +235,88 @@
             </tbody>
         </table>
     </div>
-    <div class="modal" id="AssignCompetitionModal">
-        <h4>Assign Judge</h4>
-        <input type="submit" class="myButton" data-dismiss="modal" value='Exit' />
-        <div class="table-responsive">
-            <table class="table table-striped table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th></th>
-                        <th>Name of Competition</th>
-                        <th>Date of Competition</th>
-                    </tr>
-                </thead>
-                <tbody id="checkCompetition">
-                </tbody>
-            </table>
+    <!--    <div class="modal" id="AssignCompetitionModal">
+                        <h4>Assign Judge</h4>
+                        <input type="submit" class="myButton" data-dismiss="modal" value='Exit'/>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th></th>
+                                    <th>Name of Competition</th>
+                                    <th>Date of Competition</th>
+                                </tr>
+                            </thead>
+                            <tbody id="checkCompetition">
+                            </tbody>
+                        </table>
+                    </div>
+                    <form id="Assign" method="post">
+                            <button type="button" onclick="AssignJudge()">Assign</button>
+                    </form>
         </div>
-        <form id="Assign" method="post">
-            <button type="button" onclick="AssignJudge()">Assign</button>
-        </form>
+
+        <div class="modal" id="UnassignModal">
+                        <h4>Unassign Judge</h4>
+                        <input type="submit" class="myButton" data-dismiss="modal" value='Exit' />
+                    <div class="modal-body">
+                        Name of Competition:
+                        <div id="UnassignModalBody">
+                        </div>
+                    </div>
+                    <form id="Unassign" method="post">
+                            <button type="button" id="UnassignedJudgeBtn" class="myButton">Unassign Competition</button>
+                    </form>
+        </div>-->
+    <div class="modal" id="AssignCompetitionModal">
+        <div class="modal-dialog" style="max-width:80%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Future Competitions</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Name of Competition:</th>
+                                <th scope="col">Date of Competition:</th>
+                            </tr>
+                        </thead>
+                        <tbody id="compCheck">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <form id="Assign" method="post">
+                        <button type="button" onclick="AssignJudge()" style="border: none; border-radius: 10px; background: #A98F64; color: white; padding: 10px 50px;">Assign</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="modal" id="UnassignModal">
-        <h4>Unassign Judge</h4>
-        <input type="submit" class="myButton" data-dismiss="modal" value='Exit' />
-        <div class="modal-body">
-            Name of Competition:
-            <div id="UnassignModalBody">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Do you want to unassign judge from competition?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div style="font-weight: bold;" class="col-sm-12 d-flex justify-content-center">
+                        Name of Competition:
+                    </div>
+                    <div class="col-sm-12 d-flex justify-content-center" id="UnassignModalBody">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <form id="Unassign" method="post" class="col-sm-12 d-flex justify-content-center">
+                        <button type="button" id="UnassignedJudgeBtn" class="btn btn-danger">Unassign Competition</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <form id="Unassign" method="post">
-            <button type="button" id="UnassignedJudgeBtn" class="myButton">Unassign Competition</button>
-        </form>
     </div>
 </body>
