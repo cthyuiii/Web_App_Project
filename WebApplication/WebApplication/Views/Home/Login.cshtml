@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Use Unicode character encoding - multi-language compatibility -->
+    <meta charset="utf-8" />
+
+    <!-- Set the initial view zooming scale for mobile device -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+
+    <title>Judge.IO - Login</title>
+
+    <!-- Reference to customized styling for this website -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/Site.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="flex-container">
+        <!-- Title -->
+        <div class="align-content-md-center">
+            <p style="font-size: 100px; color: #311DDD; text-align:center">Login</p>
+        </div>
+        <!-- Login Form -->
+        <div style="text-align: center">
+            <form method="post" action="~/Home/HomeLogin">
+                <fieldset class="loginFieldset">
+                    <label for="txtEmail">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="txtEmail" id="txtEmail" required /><br />
+                    <label for="txtPassword">Password:</label>
+                    <input style="position:relative" type="password" name="txtPassword" id="txtPassword" required /><br />
+                    <input type="submit" id="btnLogin" class="myButton" value="Login" />
+                    <br />
+                    <span style="color:red;">@TempData["Message"]</span>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <p>Don't have an existing account? Create a <a asp-action="CreateCompetitor" asp-controller="Home">competitor</a> or a <a asp-action="CreateJudge" asp-controller="Home">judge</a> account now!</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

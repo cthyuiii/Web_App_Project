@@ -1,0 +1,156 @@
+﻿@model WebApplication.Models.JudgeViewRankings
+
+@{
+    ViewData["Title"] = "Update";
+}
+<h4 class="PageTitle">Set Ranking</h4>
+<form asp-action="Update">
+    <fieldset class="FormContent">
+        <div class="form-group row">
+            <label asp-for="CompetitionID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CompetitionID
+                    <input asp-for="CompetitionID" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CompetitorID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CompetitorID
+                    <input asp-for="CompetitorID" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CompetitionName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CompetitionName
+                    <input asp-for="CompetitionName" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Appeal"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @if (Model.Appeal == null)
+                    {
+                        <a>No Appeal Submitted</a>
+                    }
+                    else
+                    {
+                        @Model.Appeal
+                    }
+                    <input asp-for="Appeal" form-control style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="VoteCount"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.VoteCount
+                    <input asp-for="VoteCount" form-control style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="totalMark"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @if (Model.markSet==false)
+                    {
+                        @Model.totalMark
+                        <br />
+                        <a style="color:red">Remember to input score for competitor!</a>
+                    }
+                    else
+                    {
+                        @Model.totalMark
+                    }
+                    <input asp-for="totalMark" form-control style="display:none" />
+                </div>
+            </div>
+        </div>
+        @if (Model.ResultReleasedDate < DateTime.Now)
+        {
+            <div class="form-group row">
+                <label asp-for="Ranking"
+                       class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9 col-md-5">
+                    <div class="col-sm-9 form-control-plaintext">
+                        @if (Model.Ranking == null)
+                        {
+                            <a>UNRANKED</a>
+                        }
+                        else
+                        {
+                            @Model.Ranking
+                        }
+                        <input asp-for="Ranking" form-control style="display:none" />
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="form-group row">
+                <label asp-for="Ranking"
+                       class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9 col-md-5">
+                    <div class="col-sm-9 form-control-plaintext">
+                        @if (Model.Ranking != null)
+                        {
+                            <input asp-for="Ranking" value="@Model.Ranking" /><br />
+                            <br />
+                            <br />
+                            <br />
+                            <input type="submit" value="Update Competitor's Rank"
+                                   class="btn btn-primary" />
+                        }
+                        else if (Model.markSet == false)
+                        {
+                            <a>UNRANKED</a><br />
+                            <a style="color:red">Fill up all the scores to rank competitor!</a>
+                        }
+                        else
+                        {
+                            <a>UNRANKED</a>
+                            <br />
+                            <input asp-for="Ranking" /><br />
+                            <br />
+                            <br />
+                            <br />
+                            <input type="submit" value="Set Competitor's Rank"
+                                   class="btn btn-primary" />
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        <div>
+            <a asp-controller="JudgeViewRankings" asp-action="ViewCompetitions">Back to Competition List</a>
+        </div>
+        @if (Model.ResultReleasedDate < DateTime.Now)
+        {
+            <span style="color:red">@ViewData["Done"]</span>
+        }
+        else
+        {
+            <span style="color:red">@ViewData["NotDone"]</span>
+        }
+        <span style="color:red">@ViewData["Error"]</span>
+
+
+    </fieldset>
+</form>

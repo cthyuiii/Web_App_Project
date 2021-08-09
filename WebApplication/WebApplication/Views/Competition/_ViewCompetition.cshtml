@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebApplication.Models.CompetitionViewModel>
+
+    @if (Model.ToList().Count > 0)
+    {
+    <div class="table-responsive">
+        <table id="viewCompetition" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Competition ID</th>
+                    <th>Area of Interest</th>
+                    <th>Competition Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Result Released Date</th>
+                    <th>Judges</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                  {
+                <tr>
+                    <td>@item.CompetitionID</td>
+                    <td>@item.AreaInterest</td>
+                    <td>@item.CompetitionName</td>
+                    <td>@item.StartDate</td>
+                    <td>@item.EndDate</td>
+                    <td>@item.ResultReleasedDate</td>
+                    <td>@item.JudgeName</td>
+                    <td>
+                        <a asp-action="Edit" asp-controller="Competition"
+                           asp-route-id="@item.CompetitionID">Edit Competition</a>
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-controller="Competition"
+                           asp-route-id="@item.CompetitionID">Delete Competition</a>
+                    </td>
+                </tr>
+                  }
+            </tbody>
+        </table>
+    </div>
+    }
+    else
+{
+    <span style="color:red">No record found!</span>
+}

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebApplication.Models.Comment>
+
+
+@if (Model.ToList().Count > 0)
+{
+    <div class="table-responsive">
+        <table id="viewComment" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>DateTime Posted</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CommentID</td>
+                        <td>@item.Description</td>
+                        <td>@item.DateTimePosted</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-action="Create" asp-controller="Comment" asp-route-id="@Model.First().CompetitionID">Add</a>
+    </div>
+    <div>
+        <a asp-action="ViewCompetition">Back to List</a>
+    </div>
+}

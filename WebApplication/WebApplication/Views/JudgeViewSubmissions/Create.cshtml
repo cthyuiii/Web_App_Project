@@ -1,0 +1,105 @@
+﻿@model WebApplication.Models.JudgeViewSubmissions
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h4 class="PageTitle">Update Scores</h4>
+<form asp-action="Create">
+    <fieldset class="FormContent">
+        <div class="form-group row">
+            <label asp-for="CompetitionID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CompetitionID
+                    <input asp-for="CompetitionID" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CompetitorID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CompetitorID
+                    <input asp-for="CompetitorID" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CompetitionName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CompetitionName
+                    <input asp-for="CompetitionName" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="FileSubmitted"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @if (!(Model.FileSubmitted is null))
+                    {
+                        <a>@Html.ActionLink(Model.FileSubmitted, "DownloadFile", new { fileName = Model.FileSubmitted })</a>
+                    }
+                    else
+                    {
+                        @ViewData["FileSubmittedFalse"]
+                    }
+                    <input asp-for="FileSubmitted" form-control style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CriteriaID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CriteriaID
+                    <input asp-for="CriteriaID" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CriteriaName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @Model.CriteriaName
+                    <input asp-for="CriteriaName" form-control" style="display:none" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Score"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    <input asp-for="Score" /><br />
+                    <span asp-validation-for="Score" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+                <input type="submit" value="Create"
+                       class="btn btn-primary" />
+            </div>
+        </div>
+        @if(Model.DateTimeLastEdit==null)
+        {
+            <br />
+        }
+        else
+        {
+            <span style="color:blue">@Model.DateTimeLastEdit</span>
+        }
+        <div>
+            <a asp-controller="JudgeViewSubmissions" asp-action="ViewSubmissions" asp-route-CriteriaId="@Model.CriteriaID" asp-route-Competitorid="@Model.CompetitorID" asp-route-CompetitionId="@Model.CompetitionID">Back to Submissions</a>
+        </div>
+
+    </fieldset>
+</form>

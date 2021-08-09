@@ -1,0 +1,53 @@
+﻿@model WebApplication.Models.CriteriaViewModel
+
+@{
+    ViewData["Title"] = "Create Criteria";
+}
+<h4 class="PageTitle">Create Criteria</h4>
+<form asp-action="Create">
+    <fieldset class="FormContent">
+        <div class="form-group row">
+            <label asp-for="CompetitionID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <div class="col-sm-9 form-control-plaintext">
+                    @ViewData["Competition"]
+                    <input asp-for="CompetitionID" form-control" style="display:none" />
+                </div>
+                <span asp-validation-for="CompetitionID"
+                      class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CriteriaName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="CriteriaName" class="form-control" />
+                <span asp-validation-for="CriteriaName"
+                      class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Weightage"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="Weightage" class="form-control" />
+                <span asp-validation-for="Weightage"
+                      class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+                <input type="submit" value="Create"
+                       class="btn btn-primary" />
+            </div>
+        </div>
+        <span style="color:red">@ViewData["ErrorMessage"]</span>
+        <div>
+            <a asp-controller="Criteria" asp-action="ViewCompetitionCriteria">Back to Competition List</a>
+        </div>
+
+    </fieldset>
+</form>
+
+

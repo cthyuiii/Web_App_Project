@@ -1,0 +1,163 @@
+﻿@model WebApplication.Models.JudgeCompetitionCriteriaViewModel
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "View Competition Criteria";
+}
+
+<h4 class="PageTitle">View Competition Criteria</h4>
+<style>
+    #overlay {
+        position: fixed; /* Sit on top of the page content */
+        display: block; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #overlay-box {
+        position: absolute;
+        width: 40%;
+        height: 40px;
+        background-color: white;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+</style>
+@if (HttpContextAccessor.HttpContext.Session.GetString("TempData") == "true")
+{
+    <div id="overlay">
+        <div id="overlay-box">
+            Criteria for this competition has been completed
+        </div>
+    </div>
+    HttpContextAccessor.HttpContext.Session.SetString("TempData", "false");
+}
+
+@if (Model.competitionList.Count != 0)
+{
+    <!-- Display a list of Competitions -->
+    <div class="table-responsive">
+        <table id="viewCompetition" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Area of Interest</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Result Released Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.competitionList)
+                {
+                    string selectedRow = "";
+                    if (ViewData["selectedCompetitionNo"].ToString()
+                     == item.CompetitionID.ToString())
+                    {
+                        // Highlight the selected row
+                        selectedRow = "class='table-primary'";
+                    }
+                    <tr @Html.Raw(selectedRow)>
+                        <td>@item.CompetitionID.ToString()</td>
+                        <td>@item.CompetitionName</td>
+                        <td>@item.AreaInterest</td>
+                        <td>@item.StartDate</td>
+                        <td>@item.EndDate</td>
+                        <td>@item.ResultReleasedDate</td>
+                        <td>
+                            <a asp-action="ViewCompetitionCriteria" asp-controller="Criteria"
+                               asp-route-id="@item.CompetitionID">View Criteria</a> |
+                            @if (Model.IsComplete)
+                            {
+                                <a href="#">Create Criteria</a>
+                            }
+                            else
+                            {
+                                <a asp-action="Create" asp-controller="Criteria"
+                                   asp-route-CompetitionId="@item.CompetitionID">Create Criteria</a>
+
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <span style="color:red;font-size:28px">@ViewData["noComp"]</span>
+}
+
+
+<!-- Display a list of criteria for each competition -->
+@if (ViewData["selectedCompetitionNo"].ToString() != "")
+{
+    if (Model.criteriaList.Count != 0)
+    {
+        <h5>
+            Criteria for Competition
+            @ViewData["selectedCompetitionNo"].ToString() :
+        </h5>
+        @if (Model.criteriaList.Count > 0)
+        {
+            <div class="table-responsive">
+                <table id="viewCriteria" class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Criteria Name</th>
+                            <th>Weightage</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.criteriaList)
+                        {
+                            <tr>
+                                <td>@item.CriteriaID.ToString()</td>
+                                <td>@item.CriteriaName</td>
+                                <td>@item.Weightage</td>
+                                <td>
+                                    <a asp-action="Update" asp-controller="Criteria"
+                                       asp-route-CompetitionId="@item.CompetitionID" asp-route-critId="@item.CriteriaID">Update Criteria</a>
+                                    | <a asp-action="Delete" asp-controller="Criteria"
+                                         asp-route-CompetitionId="@item.CompetitionID" asp-route-critId="@item.CriteriaID">Delete Criteria</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <span style="color:red">No record found!</span>
+        }
+    }
+    else
+    {
+        <h5>No criteria for selected competition!</h5>
+    }
+}
+
+<script>
+    document.getElementById("overlay").addEventListener('click', function () {
+        document.getElementById("overlay").style.display = "none";
+    });
+
+</script>

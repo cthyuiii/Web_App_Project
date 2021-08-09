@@ -1,0 +1,34 @@
+﻿@model WebApplication.Models.Comment
+
+@{
+    ViewData["Title"] = "ViewNoRecords";
+}
+
+<html>
+<head>
+    <!-- Use Unicode character encoding - multi-language compatibility -->
+    <meta charset="utf-8" />
+
+    <!-- Set the initial view zooming scale for mobile device -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+
+    <title>Judge.IO - View Comments</title>
+
+    <!-- Reference to customized styling for this website -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/Site.css">
+</head>
+<body>
+    <!-- Title -->
+    <div class="align-content-md-center">
+        <p style="font-size: 100px; color: #311DDD; text-align:center">View Comments</p>
+    </div>
+    <span style="color:red">No record found!</span>
+    <div>
+        <a asp-action="Create" asp-controller="Comment" asp-route-id="@Model.CompetitionID">Add</a>
+    </div>
+    <div>
+        <a asp-action="ViewCompetition">Back to List</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿@model WebApplication.Models.AreaInterest
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Area of Interest</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+            <span style="color:green;">@TempData["SuccessMessage"]</span>
+            <a asp-action="Index">Back to List</a>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Login"
+       asp-controller="Home">Create New Area of Interest</a>
+</div>
+

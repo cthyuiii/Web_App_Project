@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebApplication.Models.CompetitionViewModel>
+
+@if (Model.ToList().Count > 0)
+            {
+                <div class="table-responsive">
+                    <table id="viewCompetition" class="table table-striped table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Area of Interest</th>
+                                <th>Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Result Released Date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CompetitionID.ToString()</td>
+                        <td>@item.AreaInterest</td>
+                        <td>@item.CompetitionName</td>
+                        <td>@item.StartDate</td>
+                        <td>@item.EndDate</td>
+                        <td>@item.ResultReleasedDate</td>
+                        <td>
+                            <a asp-action="Rankings" asp-controller="Competition"
+                               asp-route-id="@item.CompetitionID">Rankings</a> |
+                            <a asp-action="ViewComment" asp-controller="Comment"
+                               asp-route-id="@item.CompetitionID">Comment</a> |
+                            <a asp-action="ViewCompetitionSubmission"
+                               asp-controller="CompetitionSubmission"
+                               asp-route-id="@item.CompetitionID">View</a> |
+                        </td>
+                    </tr>
+                }
+                        </tbody>
+                    </table>
+                </div>
+            }
+else {
+    <span style="color:red">No record found!</span>
+}
+

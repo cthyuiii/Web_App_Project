@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WebApplication.Models.JudgeViewModel>
+@{
+    ViewData["Title"] = "View Judge";
+}
+
+<h4 class="PageTitle">View Judge</h4>
+@if (Model.ToList().Count > 0)
+{
+    <div class="table-responsive">
+        <table id="viewBook" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.JudgeName)</th>
+                    <th>@Html.DisplayNameFor(model => model.Salutation)</th>
+                    <th>@Html.DisplayNameFor(model => model.AreaInterest)</th>
+                    <th>@Html.DisplayNameFor(model => model.EmailAddr)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.JudgeName</td>
+                        <td>@item.Salutation</td>
+                        <td>@item.AreaInterest</td>
+                        <td>@item.EmailAddr</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <span style="color:red">No record found!</span>
+}

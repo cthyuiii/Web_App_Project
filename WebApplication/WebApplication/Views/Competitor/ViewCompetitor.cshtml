@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebApplication.Models.Competitor>
+
+@{
+    ViewData["Title"] = "ViewCompetitor";
+}
+
+<h1>ViewCompetitor</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CompetitorID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompetitorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salutation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailAddr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompetitorID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompetitorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salutation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailAddr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

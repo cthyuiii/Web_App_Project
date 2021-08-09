@@ -1,0 +1,827 @@
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.exe
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.deps.json
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.json
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.dev.json
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfoInputs.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfo.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.xml
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication.styles.css
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.input.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.output.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorCoreGenerate.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Create.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Delete.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Index.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\ViewAreaInterest.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\_ViewAreaInterest.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\Create.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewComment.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewNoRecords.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\_ViewComment.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFile.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\_ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\CompetitionViewModel.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Create.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Delete.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Edit.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\ViewCompetition.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_ViewCompetition.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\Create.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\JoinCompetition.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitWork.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitor.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewJoinedCompetitions.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\_ViewCompetitor.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Create.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewCompetition.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewCompetition.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Create.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Index.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\ViewMarkingCriteria.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ViewCompetition.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CompetitorMenu.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomeMenu.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_JudgeMenu.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewCompetition.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CopyComplete
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.genruntimeconfig.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csprojAssemblyReference.cache
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\Vote.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_Rankings.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Rankings.cshtml.g.cs
+C:\Users\tanji\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFileFromRanking.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.exe
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.deps.json
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.json
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.dev.json
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.pdb
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.pdb
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.AssemblyReference.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfoInputs.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfo.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CoreCompileInputs.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.MvcApplicationPartsAssemblyInfo.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.Manifest.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.xml
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication.styles.css
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.input.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.output.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorCoreGenerate.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Create.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Delete.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Index.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\ViewAreaInterest.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\_ViewAreaInterest.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\Create.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewComment.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewNoRecords.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\_ViewComment.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewCompetitionSubmission.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFile.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFileFromRanking.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\Vote.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\_ViewCompetitionSubmission.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\CompetitionViewModel.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Create.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Delete.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Edit.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Rankings.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\ViewCompetition.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_Rankings.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_ViewCompetition.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\Create.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\JoinCompetition.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitWork.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitionCriteria.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitor.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewJoinedCompetitions.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\_ViewCompetitor.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Create.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewCompetition.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewCompetition.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Create.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Index.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ViewCompetition.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CompetitorMenu.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomeMenu.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_JudgeMenu.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewCompetition.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.Views.pdb
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CopyComplete
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.dll
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.pdb
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.genruntimeconfig.cache
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.exe
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.deps.json
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.json
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.dev.json
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfoInputs.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfo.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.xml
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication.styles.css
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.input.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.output.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorCoreGenerate.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Create.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Delete.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Index.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\ViewAreaInterest.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\_ViewAreaInterest.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\Create.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewComment.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewNoRecords.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\_ViewComment.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFile.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFileFromRanking.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\Vote.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\_ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\CompetitionViewModel.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Create.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Delete.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Edit.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Rankings.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\ViewCompetition.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_Rankings.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_ViewCompetition.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\JoinCompetition.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitWork.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitor.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewJoinedCompetitions.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\_ViewCompetitor.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Create.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewCompetition.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewCompetition.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Create.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Index.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ViewCompetition.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CompetitorMenu.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomeMenu.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_JudgeMenu.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewCompetition.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CopyComplete
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.genruntimeconfig.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.AssemblyReference.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewScores.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitAppeal.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitAppeal.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewScores.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.exe
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.deps.json
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.json
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.dev.json
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfoInputs.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfo.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.xml
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication.styles.css
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.input.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.output.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorCoreGenerate.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Create.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Delete.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Index.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\ViewAreaInterest.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\_ViewAreaInterest.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\Create.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewComment.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewNoRecords.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\_ViewComment.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFile.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFileFromRanking.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\Vote.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\_ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\CompetitionViewModel.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Create.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Delete.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Edit.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Rankings.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\ViewCompetition.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_Rankings.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_ViewCompetition.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\Create.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\JoinCompetition.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitAppeal.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitWork.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitor.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewJoinedCompetitions.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewScores.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\_ViewCompetitor.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Create.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewCompetition.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewCompetition.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Create.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Index.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ViewCompetition.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CompetitorMenu.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomeMenu.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_JudgeMenu.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewCompetition.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CopyComplete
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.genruntimeconfig.cache
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewCompetitions.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.AssemblyReference.cache
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewCompetitions.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewSubmissions.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewCompetitions.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\Create.cshtml.g.cs
+C:\Users\ezout\OneDrive\Desktop\Y2 - Sem 1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewSubmissions.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewSubmissions.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\Create.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\Update.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewRankings\ViewCompetitions.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewRankings\Update.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Update.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Update.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewRankings\Update.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewRankings\ViewCompetitions.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\Create.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\Update.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\Create.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateCompetitor.cshtml.g.cs
+C:\Users\caleb\Desktop\WEB\WEB ASG\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateJudge.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateCompetitor.cshtml.g.cs
+D:\Y2-Sem1\WEB\Assignment\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateJudge.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.exe
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.deps.json
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.json
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.runtimeconfig.dev.json
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.AssemblyReference.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfoInputs.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.AssemblyInfo.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorAssemblyInfo.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.Manifest.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication.StaticWebAssets.xml
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication.styles.css
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.input.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.TagHelpers.output.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorCoreGenerate.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Create.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Delete.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\AreaInterest\Index.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\Create.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewComment.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\ViewNoRecords.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Comment\_ViewComment.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFile.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\ViewFileFromRanking.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\Vote.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\CompetitionSubmission\_ViewCompetitionSubmission.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\CompetitionViewModel.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Create.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Delete.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Edit.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\Rankings.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\ViewCompetition.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_Rankings.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competition\_ViewCompetition.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\Create.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\JoinCompetition.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitAppeal.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\SubmitWork.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewCompetitor.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewJoinedCompetitions.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\ViewScores.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Competitor\_ViewCompetitor.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Create.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\Update.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Criteria\ViewCompetitionCriteria.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateCompetitor.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateJudge.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewCompetition.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewCompetition.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewRankings\Update.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewRankings\ViewCompetitions.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\Create.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\Update.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewCompetitions.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\JudgeViewSubmissions\ViewSubmissions.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Create.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Judge\Index.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ViewCompetition.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CompetitorMenu.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomeMenu.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_JudgeMenu.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewCompetition.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.RazorTargetAssemblyInfo.cs
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.Views.pdb
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.csproj.CopyComplete
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.dll
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.pdb
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.genruntimeconfig.cache
+C:\Users\reshi\Source\Repos\web2021apr_p01_t02\WebApplication\WebApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminMenu.cshtml.g.cs

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        @{
+            if (Context.Session.GetString("Role") != null)
+            {
+                if (Context.Session.GetString("Role") == "Competitor")
+                {
+                    @await Html.PartialAsync("_CompetitorMenu.cshtml")
+                }
+                else if (Context.Session.GetString("Role") == "Judge")
+                {
+                    @await Html.PartialAsync("_JudgeMenu.cshtml")
+                }
+                else if (Context.Session.GetString("Role") == "Admin")
+                {
+                    @await Html.PartialAsync("_AdminMenu.cshtml")
+                }
+            }
+            else
+            {
+                @await Html.PartialAsync("_HomeMenu.cshtml")
+            }
+        }
+    </header>
+    <div class="container">
+        <!-- 1st row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p style="padding:2px 15px;">
+                    @{
+                        string userName = "Anonymous";
+                        string userRole = "Unknown";
+
+                        if (Context.Session.GetString("Name") != null)
+                        {
+                            userName = Context.Session.GetString("Name");
+                        }
+                        if (Context.Session.GetString("Role") != null)
+                        {
+                            userRole = Context.Session.GetString("Role");
+                        }
+                    }
+                    Welcome,&nbsp;
+                    <span style="font-weight:bold">@userName</span>&nbsp;
+                    (Role: @userRole).&nbsp;
+                </p>
+            </div>
+        </div>
+        <!-- 2nd row -->
+        <div class="row">
+            <div class="col-sm-12">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - WebApplication - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

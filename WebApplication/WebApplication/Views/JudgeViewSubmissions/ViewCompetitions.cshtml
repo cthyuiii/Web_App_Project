@@ -1,0 +1,101 @@
+﻿@model WebApplication.Models.JudgeViewSubmissions
+
+@{
+    ViewData["Title"] = "View Competitions";
+}
+
+<h4 class="PageTitle">Competition Submissions</h4>
+
+@if (Model.competitionList.Count != 0)
+{
+    <!-- Display a list of Competitions -->
+    <div class="table-responsive">
+        <table id="viewCompetition" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Area of Interest</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Result Released Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.competitionList)
+                {
+                    string selectedRow = "";
+                    if (ViewData["selectedCompetitionNo"].ToString()
+                     == item.CompetitionID.ToString())
+                    {
+                        // Highlight the selected row
+                        selectedRow = "class='table-primary'";
+                    }
+                    <tr @Html.Raw(selectedRow)>
+                        <td>@item.CompetitionID.ToString()</td>
+                        <td>@item.CompetitionName</td>
+                        <td>@item.AreaInterest</td>
+                        <td>@item.StartDate</td>
+                        <td>@item.EndDate</td>
+                        <td>@item.ResultReleasedDate</td>
+                        <td>
+                            <a asp-action="ViewCompetitions" asp-controller="JudgeViewSubmissions"
+                               asp-route-id="@item.CompetitionID">View Competitors</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+}
+else
+{
+    <span style="color:red;font-size:28px" >@ViewData["noComp"]</span>
+}
+
+
+@if (ViewData["selectedCompetitionNo"].ToString() != "")
+{
+    if (Model.competitorList.Count != 0)
+    {
+        <h5>
+            Competitors for Competition
+            @ViewData["selectedCompetitionNo"].ToString() :
+        </h5>
+        @if (Model.competitorList.Count > 0)
+        {
+            <div class="table-responsive">
+                <table id="viewCriteria" class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Competitor ID</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.competitorList)
+                        {
+                            <tr>
+                                <td>@item.CompetitorID.ToString()</td>
+                                <td>
+                                    <a asp-action="ViewSubmissions" asp-controller="JudgeViewSubmissions"
+                                       asp-route-Competitionid="@item.CompetitionID" asp-route-Competitorid="@item.CompetitorID">View Scores</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <span style="color:red">No record found!</span>
+        }
+    }
+    else
+    {
+        <h5>No Competitor Registered for selected competition!</h5>
+    }
+}

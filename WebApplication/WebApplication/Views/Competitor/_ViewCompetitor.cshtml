@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebApplication.Models.Competitor>
+
+@if (Model.ToList().Count > 0)
+            {
+                <div class="table-responsive">
+                    <table id="viewCompetitor" class="table table-striped table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Salutation</th>
+                                <th>Email Address</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                {
+                    <tr>
+
+                    </tr>
+                }
+                        </tbody>
+                    </table>
+                </div>
+            }

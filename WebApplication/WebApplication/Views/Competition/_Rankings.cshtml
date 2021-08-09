@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplication.Models.CompetitionSubmission>
+
+@if (Model.ToList().Count > 0)
+{
+    <div class="table-responsive">
+        <table id="viewCompetition" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>File Name</th>
+                    <th>Ranking</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CompetitorName</td>
+                        <td>@item.FileSubmitted</td>
+                        <td>@item.Ranking</td>
+                        <td><a asp-action="ViewFileFromRanking" asp-controller="CompetitionSubmission"
+                            asp-route-competitorid="@item.CompetitorID"
+                            asp-route-competitionid="@item.CompetitionID">File</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <a asp-action="ViewCompetition" asp-controller="Home">Back to List</a>
+    </div>
+}
+else
+{
+    <span style="color:red">Result not released yet!</span>
+    <div>
+        <a asp-action="ViewCompetition" asp-controller="Home">Back to List</a>
+    </div>
+}

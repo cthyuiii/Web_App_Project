@@ -1,0 +1,29 @@
+﻿@model IEnumerable<WebApplication.Models.CompetitionViewModel>
+
+@{
+    ViewData["Title"] = "ViewCompetition";
+}
+
+<html>
+<head>
+    <!-- Use Unicode character encoding - multi-language compatibility -->
+    <meta charset="utf-8" />
+
+    <!-- Set the initial view zooming scale for mobile device -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+
+    <title>Judge.IO - View Competition</title>
+
+    <!-- Reference to customized styling for this website -->
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/Site.css">
+</head>
+<body>
+    <!-- Title -->
+    <div class="align-content-md-center">
+        <p style="font-size: 100px; color: #311DDD; text-align:center">View Competition</p>
+    </div>
+    <!-- Add a partial view to display a list of staff records in a tabular format. -->
+    <partial name="~/Views/Competition/_ViewCompetition.cshtml" model="@Model" />
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿@model WebApplication.Models.Competition
+
+@{
+    ViewData["Title"] = "Join Competition";
+}
+
+<h1>Join Competition</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="JoinCompetition">
+            <fieldset>
+                <legend>Are you sure to join this competition?</legend>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CompetitionID" class="control-label"></label>
+                    <input asp-for="CompetitionID" class="form-control" readonly />
+                </div>
+                <div class="form-group">
+                    <label asp-for="CompetitionName" class="control-label"></label>
+                    <input asp-for="CompetitionName" class="form-control" readonly />
+                </div>
+                <div class="form-group">
+                    @Html.Raw(ViewData["ButtonState"])
+                </div>
+                <span style="color:green;">@TempData["SuccessfullyJoinedMsg"]</span>
+                <span style="color:red;">@TempData["ErrorMessage"]</span>
+            </fieldset>  
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="ViewCompetitionCriteria">Back to Competition List</a>
+</div>
+

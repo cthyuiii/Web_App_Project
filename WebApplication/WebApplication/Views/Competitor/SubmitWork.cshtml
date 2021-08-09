@@ -1,0 +1,55 @@
+﻿@model WebApplication.Models.CompetitionSubmissionViewModel
+
+@{
+    ViewData["Title"] = "Submit Work";
+}
+
+<h4 class="PageTitle">Submit Competition Work</h4>
+<hr />
+<form asp-action="SubmitWork" enctype="multipart/form-data">
+    <fieldset class="FormContent">
+        <div class="form-group row">
+            <label asp-for="CompetitionID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="CompetitionID" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CompetitorID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="CompetitorID" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CompetitonName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="CompetitonName" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="filetoUpload"
+                   class="col-sm-3 col-form-label">
+                Submitted Work (pdf/jpg/mp4 format)
+            </label>
+            <div class="col-sm-9">
+                <input asp-for="filetoUpload" accept="pdf/jpeg/mp4" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+                @Html.Raw(@ViewData["UploadWorkBtn"])
+                <span style="color:red;">@TempData["ErrorSubmitWorkMessage"]</span>
+                <span style="color:green;">@TempData["Message"]</span>
+            </div>
+        </div>
+        <div>
+            <a asp-action="ViewJoinedCompetitions">Back to list of joined competitions</a>
+        </div>
+    </fieldset>
+</form>
